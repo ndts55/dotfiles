@@ -1,2 +1,2 @@
-# linux-conf
-config files for Linux
+# linux-conf-ndts
+personal Linux configuration files
