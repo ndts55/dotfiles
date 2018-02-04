@@ -1,0 +1,3 @@
+[submodule "st-ndts"]
+	path = st-ndts
+	url = git@github.com:ndts55/st-ndts.git

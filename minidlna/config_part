@@ -1,0 +1,6 @@
+# MiniDLNA
+	minidlna = {
+		enable = true;
+		config = "friendly_name=Swift \n inotify=yes";
+		mediaDirs= [ "A,/mnt/Data/audio" "V,/mnt/Data/movies" "V,/mnt/Data/series" "P,/mnt/Data/pictures" ];
+	}
