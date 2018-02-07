@@ -1,4 +1,8 @@
 
+[options]
+font = NotoMono-Regular 14
+
+
 [colors]
 # Base16 Materia
 # Author: Defman21

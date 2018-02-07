@@ -32,5 +32,9 @@ cp -af rofi/themes ~/.local/share/rofi/
 # tmux
 cp -f tmux/tmux.conf ~/.tmux.conf
 
+# termite
+cat termite/common termite/colors > termite/config
+cp -af termite ~/.config/
+
 # polybar
 # cp -af polybar ~/.config/
