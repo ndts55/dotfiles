@@ -158,7 +158,7 @@ let g:neotex#enabled=2
 
 " colorscheme
 set background=dark
-colorscheme base16-materia
+colorscheme base16-tomorrow-night
 
 " Base 16
 set termguicolors
