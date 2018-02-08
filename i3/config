@@ -286,7 +286,7 @@ gaps outer 2
 # exec_always -> on startup and restart
 # exec -> only on startup
 # exec_always --no-startup-id feh --bg-scale /home/ndts/.wallpaper
-exec_always --no-startup-id setxkbmap -layout us -variant altgr-intl -option nodeadkeys # nixos does this already
+exec_always --no-startup-id setxkbmap -layout us -variant altgr-intl -option nodeadkeys -option "lv3:caps_switch" # nixos does this already
 exec compton --backend glx --vsync opengl-swc
 # exec enpass
 exec /usr/libexec/gnome-settings-daemon
