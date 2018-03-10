@@ -140,6 +140,9 @@ Plug 'donRaphaco/neotex', {'for': 'tex'}
 " base 16
 Plug 'chriskempson/base16-vim'
 
+" haskell
+Plug 'neovimhaskell/haskell-vim', { 'for': 'hs' }
+
 call plug#end()
 
 " Airline
