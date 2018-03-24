@@ -276,11 +276,11 @@ assign [class="Thunderbird"] "95:&#xf0e0;"
 assign [class="discord"] "94:&#xf086;"
 assign [class="Unity"] "93:&#xf11b;"
 
-for_window [class=".*"] border pixel 2
+for_window [class=".*"] border pixel 3
 
 # i3-gaps stuff
-gaps inner 2
-gaps outer 2
+gaps inner 7
+gaps outer 0
 
 # startup stuff
 # exec_always -> on startup and restart
