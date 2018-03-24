@@ -281,6 +281,7 @@ for_window [class=".*"] border pixel 3
 # i3-gaps stuff
 gaps inner 7
 gaps outer 0
+smart_gaps on
 
 # startup stuff
 # exec_always -> on startup and restart
