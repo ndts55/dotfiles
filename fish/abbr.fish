@@ -39,6 +39,7 @@ alias pqi="pacman -Qi"
 
 # yaourt alias
 alias yinst="yaourt -S"
+alias yupgr="yaourt -Syu --aur"
 
 # tar
 alias gzunpack="tar -xvzf"
