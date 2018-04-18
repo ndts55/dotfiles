@@ -143,6 +143,9 @@ Plug 'chriskempson/base16-vim'
 " haskell
 Plug 'neovimhaskell/haskell-vim', { 'for': 'hs' }
 
+" fsharp
+Plug 'johngalambos/neovim-fsharp', { 'do': 'install.py' }
+
 call plug#end()
 
 " Airline
