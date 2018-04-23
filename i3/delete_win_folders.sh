@@ -1,3 +1,5 @@
+#!/bin/sh
+
 if [ -d "/mnt/Data/System Volume Information" ]; then
     rm -r "/mnt/Data/System Volume Information"
 fi
