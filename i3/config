@@ -218,8 +218,7 @@ bindsym XF86Calculator exec speedcrunch
 
 bindsym $mod+Shift+Control+p mode $roman_empire_mode
 bindsym $mod+Shift+Control+r mode $redshift_mode
-bindsym $mod+Shift+Control+l exec i3lock -e --color=$bground --ringvercolor=$darkcyanff --insidevercolor=$cyanff --ringwrongcolor=$darkredff --insidewrongcolor=$redff --ringcolor=$darkblueff --keyhlcolor=$whiteff --insidecolor=00000000 --linecolor=00000000 --textcolor=$darkblackff --bshlcolor=$whiteff --separatorcolor=00000000 --veriftext="Hmm..." --wrongtext="No." --textsize=40 --modsize=12
-
+bindsym $mod+Shift+Control+l exec sh lock.sh
 
 bindsym $mod+comma workspace prev
 bindsym $mod+period workspace next
@@ -291,7 +290,7 @@ exec_always --no-startup-id setxkbmap -layout us -variant altgr-intl -option nod
 exec compton --backend glx --vsync opengl-swc
 # exec enpass
 exec /usr/libexec/gnome-settings-daemon
-exec i3lock -e --color=$bground --ringvercolor=$darkcyanff --insidevercolor=$cyanff --ringwrongcolor=$darkredff --insidewrongcolor=$redff --ringcolor=$darkblueff --keyhlcolor=$whiteff --insidecolor=00000000 --linecolor=00000000 --textcolor=$darkblackff --bshlcolor=$whiteff --separatorcolor=00000000 --veriftext="Hmm..." --wrongtext="No." --textsize=40 --modsize=12
 exec redshift -l 49.8:8.6, mode "default"
-exec delete_win_folders.sh
+exec sh delete_win_folders.sh
+exec sh lock.sh
 
