@@ -14,18 +14,6 @@ alias gaa="git add ."
 alias gcm="git commit -m"
 alias gp="git push"
 
-# nixos
-alias delgensold="sudo nix-env -p /nix/var/nix/profiles/system --delete-generations old"
-alias collectgarbage="nix-collect-garbage -d"
-alias listgens="sudo nix-env -p /nix/var/nix/profiles/system --list-generations"
-alias nixbuild="sudo nixos-rebuild build --show-trace"
-alias nixtest="sudo nixos-rebuild test"
-alias nixswitch="sudo nixos-rebuild switch"
-alias nixconf="sudo nvim ~/linux-conf/nixos/configuration.nix"
-
-# postgres
-alias supost="sudo -u postgres -i"
-
 # pacman alias
 alias pupdt="sudo pacman -Syy"
 alias pinst="sudo pacman -S"
