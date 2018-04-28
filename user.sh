@@ -36,5 +36,3 @@ cp -f tmux/tmux.conf ~/.tmux.conf
 cat termite/common termite/colors > termite/config
 cp -af termite ~/.config/
 
-# polybar
-# cp -af polybar ~/.config/
