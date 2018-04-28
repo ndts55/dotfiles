@@ -2,6 +2,7 @@
 alias ls="ls --color=always"
 alias la="ls -a"
 alias ll="ls -l"
+alias l="ls -l"
 alias lal="ls -la"
 alias d="cd /mnt/Data"
 alias r="ranger"
@@ -21,9 +22,6 @@ alias nixbuild="sudo nixos-rebuild build --show-trace"
 alias nixtest="sudo nixos-rebuild test"
 alias nixswitch="sudo nixos-rebuild switch"
 alias nixconf="sudo nvim ~/linux-conf/nixos/configuration.nix"
-
-# maim
-alias cpsel="maim -s | xclip -selection clipboard -t image/png"
 
 # postgres
 alias supost="sudo -u postgres -i"
@@ -52,3 +50,4 @@ alias tarpack="tar -cvf"
 alias tm="tmux a"
 alias tmt="tmux a -t"
 alias tmd="tmux detach-client"
+
