@@ -1,9 +1,9 @@
 # universal aliases
-alias ls="ls --color=always"
+alias ls="ls --color=always -h"
 alias la="ls -a"
-alias ll="ls -l"
-alias l="ls -l"
-alias lal="ls -la"
+alias ll="ls -lh"
+alias l="ls -lh"
+alias lal="ls -lah"
 alias d="cd /mnt/Data"
 alias r="ranger"
 alias dr="d; r"
