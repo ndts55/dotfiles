@@ -304,5 +304,5 @@ exec compton --backend glx --vsync opengl-swc
 exec /usr/libexec/gnome-settings-daemon
 exec redshift -l 49.8:8.6, mode "default"
 exec ~/.config/i3/delete_win_folders.sh
-exec ~/.config/i3/lock.sh
+exec betterlockscreen -l dimblur
 

@@ -39,3 +39,6 @@ alias tm="tmux a"
 alias tmt="tmux a -t"
 alias tmd="tmux detach-client"
 
+# betterlockscreen
+alias lockimageupdt="betterlockscreen -u ~/.config/i3/lockimage"
+
