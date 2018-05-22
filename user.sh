@@ -1,38 +1,38 @@
-# directory stuff
+#!/bin/bash
+
+current_dir="$( cd "$( dirname "${BASH_SOURCE[0]}" )" && pwd )"
+
 if [ ! -d ~/.config ]; then
     mkdir ~/.config
 fi
 
 # fish
-rm -r ~/.config/fish
-cp -af fish ~/.config/
+ln -fs $current_dir/fish ~/.config/fish
 
 # home
-cp -f home/Xresources ~/.Xresources
-cp -f home/profile ~/.profile
-cp -f home/bashrc ~/.bashrc
+ln -fs $current_dir/home/Xresources ~/.Xresources
+ln -fs $current_dir/home/profile ~/.profile
+ln -fs $current_dir/home/bashrc ~/.bashrc
 
 # theme
-cp -f xthemes/theme ~/.theme
+ln -fs $current_dir/xthemes/theme ~/.theme
 
 # i3 wm
-rm -r ~/.config/i3
-cp -af i3 ~/.config/
+ln -fs $current_dir/i3 ~/.config/i3
 
 # neovim
-cp -af nvim ~/.config/
+ln -fs $current_dir/nvim ~/.config/nvim
 
 # compton
-cp -f compton/compton.conf ~/.config/
+ln -fs $current_dir/compton/compton.conf ~/.config/compton.conf
 
 # rofi
-rm -r ~/.local/share/rofi/themes
-cp -af rofi/themes ~/.local/share/rofi/
+ln -fs $current_dir/rofi/themes ~/.local/share/rofi/themes
 
 # tmux
-cp -f tmux/tmux.conf ~/.tmux.conf
+ln -fs $current_dir/tmux/tmux.conf ~/.tmux.conf
 
 # termite
 cat termite/common termite/colors > termite/config
-cp -af termite ~/.config/
+ln -fs $current_dir/termite ~/.config/termite
 
