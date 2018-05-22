@@ -230,7 +230,7 @@ bindsym XF86Calculator exec speedcrunch
 
 bindsym $mod+Shift+Control+p mode $roman_empire_mode
 bindsym $mod+Shift+Control+r mode $redshift_mode
-bindsym $mod+Shift+Control+l exec ~/.config/i3/lock.sh
+bindsym $mod+Shift+Control+l exec betterlockscreen -l dimblur
 
 bindsym $mod+comma workspace prev
 bindsym $mod+period workspace next
