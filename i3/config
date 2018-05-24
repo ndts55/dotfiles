@@ -287,7 +287,7 @@ smart_gaps on
 
 # startup stuff
 exec_always --no-startup-id setxkbmap -layout us -variant altgr-intl -option nodeadkeys -option "lv3:caps_switch" # nixos does this already
-exec_always --no-startup-id feh --bg-scale lockimage
+exec_always feh --bg-scale ~/.config/i3/lockimage
 exec compton --backend glx --vsync opengl-swc
 exec /usr/libexec/gnome-settings-daemon
 exec redshift -l 49.8:8.6
