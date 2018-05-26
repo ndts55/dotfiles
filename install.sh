@@ -8,6 +8,7 @@ fi
 
 # fish
 ln -s $current_dir/fish ~/.config/fish
+rm fish/fish
 
 # home
 ln -s $current_dir/home/Xresources ~/.Xresources
@@ -19,15 +20,18 @@ ln -s $current_dir/xthemes/theme ~/.theme
 
 # i3 wm
 ln -s $current_dir/i3 ~/.config/i3
+rm i3/i3
 
 # neovim
 ln -s $current_dir/nvim ~/.config/nvim
+rm nvim/nvim
 
 # compton
 ln -s $current_dir/compton/compton.conf ~/.config/compton.conf
 
 # rofi
-ln -s $current_dir/rofi/themes ~/.local/share/rofi/themes
+ln -s $current_dir/rofi ~/.local/share/rofi
+rm rofi/rofi
 
 # tmux
 ln -s $current_dir/tmux/tmux.conf ~/.tmux.conf
@@ -35,4 +39,5 @@ ln -s $current_dir/tmux/tmux.conf ~/.tmux.conf
 # termite
 cat termite/common termite/colors > termite/config
 ln -s $current_dir/termite ~/.config/termite
+rm termite/termite
 
