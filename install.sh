@@ -41,3 +41,5 @@ cat termite/common termite/colors > termite/config
 ln -s $current_dir/termite ~/.config/termite
 rm termite/termite
 
+# locale
+ln -s $current_dir/locale.conf /etc/locale.conf
