@@ -231,7 +231,7 @@ bindsym $mod+Control+Print exec maim -s ~/Pictures/$(date +%s).png
 
 # Shift+Control
 bindsym $mod+Shift+Control+i [urgent="latest"] kill
-bindsym $mod+Shift+Control+l exec sh lock.sh
+bindsym $mod+Shift+Control+l exec ~/.config/i3/lock.sh
 bindsym $mod+Shift+Control+p mode $roman_empire_mode
 bindsym $mod+Shift+Control+r mode $redshift_mode
 
@@ -255,7 +255,7 @@ mode $roman_empire_mode {
   bindsym p exec systemctl poweroff
   bindsym q exec --no-startup-id i3-msg exit, mode "default"
   bindsym r exec systemctl reboot
-  bindsym s exec sh lock.sh, exec systemctl suspend, mode "default"
+  bindsym s exec ~/.config/i3/lock.sh, exec systemctl suspend, mode "default"
 
   bindsym Return mode "default"
   bindsym Escape mode "default"
@@ -286,12 +286,9 @@ gaps outer 0
 smart_gaps on
 
 # startup stuff
-exec sh lock.sh
-
 exec_always --no-startup-id setxkbmap -layout us -variant altgr-intl -option nodeadkeys -option "lv3:caps_switch"
 
 exec compton --backend glx --vsync opengl-swc
 exec redshift -l 49.8:8.6
 exec ~/.config/i3/delete_win_folders.sh
-exec syndaemon -i 0.5 -K -R -d
 
