@@ -7,32 +7,32 @@ if [ ! -d ~/.config ]; then
 fi
 
 # fish
-ln -fs $current_dir/fish ~/.config/fish
+ln -s $current_dir/fish ~/.config/fish
 
 # home
-ln -fs $current_dir/home/Xresources ~/.Xresources
-ln -fs $current_dir/home/profile ~/.profile
-ln -fs $current_dir/home/bashrc ~/.bashrc
+ln -s $current_dir/home/Xresources ~/.Xresources
+ln -s $current_dir/home/profile ~/.profile
+ln -s $current_dir/home/bashrc ~/.bashrc
 
 # theme
-ln -fs $current_dir/xthemes/theme ~/.theme
+ln -s $current_dir/xthemes/theme ~/.theme
 
 # i3 wm
-ln -fs $current_dir/i3 ~/.config/i3
+ln -s $current_dir/i3 ~/.config/i3
 
 # neovim
-ln -fs $current_dir/nvim ~/.config/nvim
+ln -s $current_dir/nvim ~/.config/nvim
 
 # compton
-ln -fs $current_dir/compton/compton.conf ~/.config/compton.conf
+ln -s $current_dir/compton/compton.conf ~/.config/compton.conf
 
 # rofi
-ln -fs $current_dir/rofi/themes ~/.local/share/rofi/themes
+ln -s $current_dir/rofi/themes ~/.local/share/rofi/themes
 
 # tmux
-ln -fs $current_dir/tmux/tmux.conf ~/.tmux.conf
+ln -s $current_dir/tmux/tmux.conf ~/.tmux.conf
 
 # termite
 cat termite/common termite/colors > termite/config
-ln -fs $current_dir/termite ~/.config/termite
+ln -s $current_dir/termite ~/.config/termite
 
