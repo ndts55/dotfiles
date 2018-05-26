@@ -286,11 +286,14 @@ gaps outer 0
 smart_gaps on
 
 # startup stuff
+exec betterlockscreen -l dimblur
+
 exec_always --no-startup-id setxkbmap -layout us -variant altgr-intl -option nodeadkeys -option "lv3:caps_switch" # nixos does this already
 exec_always feh --bg-scale ~/.config/i3/lockimage
+exec_always xrdb -merge ~/.Xresources
+exec_always xrdb -merge ~/.theme
+
 exec compton --backend glx --vsync opengl-swc
-exec /usr/libexec/gnome-settings-daemon
 exec redshift -l 49.8:8.6
 exec ~/.config/i3/delete_win_folders.sh
-exec betterlockscreen -l dimblur
 
