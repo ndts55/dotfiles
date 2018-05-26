@@ -1,15 +1,13 @@
-function start_tmux
-    if type tmux > /dev/null
-        if test -z "$TMUX" ; and test -z $TERMINAL_CONTEXT
-            exec tmux -2 attach; or tmux -2 new-session
-        end
-    end
-end
-
 set DEFAULT_USER ndts
 set -gx EDITOR nvim
 set -gx BROWSER google-chrome-stable
-set -gx GOPATH /mnt/Data/g/go
 
 source ~/.config/fish/abbr.fish
+
+# start X on login
+if status --is-login
+    if test -z "$DISPLAY" -a $XDG_VTNR = 1
+        exec startx -- -keeptty > ~/.xorg.log ^&1
+    end
+end
 
