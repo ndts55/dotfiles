@@ -37,7 +37,6 @@ rm rofi/rofi
 ln -s $current_dir/tmux/tmux.conf ~/.tmux.conf
 
 # termite
-cat termite/common termite/colors > termite/config
 ln -s $current_dir/termite ~/.config/termite
 rm termite/termite
 
