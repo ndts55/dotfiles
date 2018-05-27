@@ -42,3 +42,6 @@ rm termite/termite
 
 # locale
 ln -s $current_dir/locale.conf /etc/locale.conf
+
+# polybar
+ln -s $current_dir/polybar ~/.config/polybar

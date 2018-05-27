@@ -1,0 +1,239 @@
+[colors]
+
+; black + gray
+color0 = #1d2021
+color8 = #928374
+
+; red
+color1 = #cc241d
+color9 = #fb4934
+
+; green
+color2 = #98971a
+color10 = #b8bb26
+
+; yellow
+color3 = #d79921
+color11 = #fabd2f
+
+; blue
+color4 = #458588
+color12 = #83a598
+
+; purple
+color5 = #b16286
+color13 = #d3869b
+
+; aqua (cyan)
+color6 = #689d6a
+color14 = #8ec07c
+
+; gray + white
+color7 = #a89984
+color15 = #ebdbb2
+
+orange_dark = #d65d0e
+orange_light = #fe8019
+
+bg0_s = #32302f
+fg = {self.color15}
+fg3 = #bdae93
+
+background = ${self.color0} 
+background-alt = ${self.bg0_s}
+foreground = ${self.color15}
+foreground-alt = ${self.fg3}
+primary = ${self.color15}
+secondary = ${self.color5}
+alert = ${self.color9}
+col = #00f
+
+[bar/example]
+monitor = ${env:MONITOR:eDP-1}
+width = 100%
+height = 25
+fixed-center = false
+
+background = ${colors.background}
+foreground = ${colors.foreground}
+
+line-size = 3
+line-color = {$colors.color1}
+
+border-size = 0
+border-color = #00000000
+
+padding-left = 0
+padding-right = 0
+
+module-margin-left = 1
+module-margin-right = 1
+
+font-0 = Inconsolata:pixelsize=14;0
+font-1 = Monoisome:pixelsize=14;0 
+font-2 = Inconsolata:pixelsize=14;0
+
+modules-left = i3
+modules-right = volume backlight wlan battery date
+
+tray-position = right
+tray-padding = 0
+
+scroll-up = i3wm-wsnext
+scroll-down = i3wm-wsprev
+
+[module/xwindow]
+type = internal/xwindow
+label = %title:0:30:...%
+
+[module/i3]
+
+type = internal/i3
+index-sort = true
+pin-workspaces = true
+strip-wsnumbers = true
+enable-click = true
+enable-scroll = true
+wrapping-scroll = true
+reverse-scoll = false
+fuzzy-match = true
+
+workspace-label = %name%
+label-focused = ${self.workspace-label}
+label-unfocused = ${self.workspace-label}
+label-urgent = ${self.workspace-label}
+label-visible = ${self.workspace-label}
+
+padding = 1
+label-mode-padding = ${self.padding}
+label-mode-foreground = #000
+label-mode-background = ${colors.primary}
+
+label-focused-background = ${colors.background}
+label-focused-underline = ${colors.primary}
+label-focused-padding = ${self.padding}
+
+label-unfocused-padding = ${self.padding}
+
+label-visible-background = ${self.label-focused-background}
+label-visible-underline = ${self.label-focused-underline}
+label-visible-padding = ${self.padding}
+
+label-urgent-background = ${colors.alert}
+label-urgent-padding = ${self.padding}
+
+[module/backlight]
+type = internal/xbacklight
+card = intel_backlight
+format = <ramp> <bar>
+
+ramp-0 =  
+ramp-1 =  
+ramp-2 = 
+ramp-3 =  
+ramp-4 = 
+
+bar-width = 10
+bar-indicator = |
+bar-fill = -
+bar-empty = -
+
+[module/wlan]
+type = internal/network
+interface = wlp2s0
+interval = 3.0
+
+format-connected = <ramp-signal> <label-connected>
+format-connected-underline = ${colors.color5}
+label-connected = %essid%
+
+format-disconnected = <label-disconnected>
+format-disconnected-underline = ${self.format-connected-underline}
+label-disconnected = 睊no wifi
+label-disconnected-foreground = ${colors.foreground-alt}
+
+ramp-signal-0 = 睊 
+ramp-signal-1 = 直
+ramp-signal-2 = 
+ramp-signal-foreground = ${colors.foreground}
+
+[module/date]
+type = internal/date
+interval = 5
+
+date = " %a, %Y.%m.%d"
+time = "%H.%M "
+
+format-prefix-foreground = ${colors.foreground}
+format-underline = ${colors.color12}
+
+label = %date% %time%
+
+[module/volume]
+type = internal/volume
+
+format-volume = <ramp-volume> <bar-volume>
+label-volume = 
+label-volume-foreground = ${root.foreground}
+
+format-muted-foreground = ${colors.foreground-alt}
+label-muted =  muted
+
+ramp-volume-0 = 奄
+ramp-volume-1 = 奔
+ramp-volume-2 = 墳
+
+bar-volume-width = 10
+bar-volume-foreground-0 = ${colors.color10}
+bar-volume-foreground-1 = ${colors.color10}
+bar-volume-foreground-2 = ${colors.color10}
+bar-volume-foreground-3 = ${colors.color10}
+bar-volume-foreground-4 = ${colors.color10}
+bar-volume-foreground-5 = ${colors.color9}
+bar-volume-foreground-6 = ${colors.color7}
+bar-volume-gradient = false
+bar-volume-indicator = |
+bar-volume-indicator-font = 2
+bar-volume-fill = -
+bar-volume-fill-font = 2
+bar-volume-empty = -
+bar-volume-empty-font = 2
+bar-volume-empty-foreground = ${colors.foreground-alt}
+
+[module/battery]
+type = internal/battery
+battery = BAT0
+adapter = ADP1
+full-at = 98
+
+format-charging = <animation-charging> <label-charging>
+format-charging-underline = ${colors.color3}
+
+format-discharging = <ramp-capacity> <label-discharging>
+format-discharging-underline = ${self.format-charging-underline}
+
+format-full-prefix = " "
+format-full-prefix-foreground = ${colors.foreground-alt}
+format-full-underline = ${self.format-charging-underline}
+
+ramp-capacity-0 = 
+ramp-capacity-1 = 
+ramp-capacity-2 = 
+ramp-capacity-3 = 
+ramp-capacity-4 = 
+ramp-capacity-foreground = ${colors.foreground}
+
+animation-charging-0 = 
+animation-charging-1 = 
+animation-charging-2 = 
+animation-charging-3 = 
+animation-charging-4 = 
+animation-charging-foreground = ${colors.foreground}
+animation-charging-framerate = 750
+
+[settings]
+screenchange-reload = true
+
+[global/wm]
+margin-top = 5
+margin-bottom = 5

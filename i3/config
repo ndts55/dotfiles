@@ -18,7 +18,7 @@ bindsym $mod+Return exec i3-sensible-terminal
 bindsym $mod+Shift+q kill
 
 # start rofi (a program launcher)
-bindsym $mod+d exec rofi -show run -width 25 -font "Terminess Powerline 10"
+bindsym $mod+d exec rofi -show run -width 25 -font "Inconsolata 12"
 
 # change focus hjkl
 bindsym $mod+h focus left
@@ -91,16 +91,29 @@ bindsym $mod+a focus parent
 # set $ten "10:10"
 
 # nibble
-set $one "1:0001"
-set $two "2:0010"
-set $three "3:0011"
-set $four "4:0100"
-set $five "5:0101"
-set $six "6:0110"
-set $seven "7:0111"
-set $eight "8:1000"
-set $nine "9:1001"
-set $ten "10:1010"
+# set $one "1:0001"
+# set $two "2:0010"
+# set $three "3:0011"
+# set $four "4:0100"
+# set $five "5:0101"
+# set $six "6:0110"
+# set $seven "7:0111"
+# set $eight "8:1000"
+# set $nine "9:1001"
+# set $ten "10:1010"
+
+# letters
+set $one "1:one"
+set $two "2:two"
+set $three "3:three"
+set $four "4:four"
+set $five "5:five"
+set $six "6:six"
+set $seven "7:seven"
+set $eight "8:eight"
+set $nine "9:nine"
+set $ten "10:ten"
+
 
 # switch to workspace
 bindsym $mod+1 workspace $one
@@ -181,7 +194,7 @@ set_from_resource $darkcyan    color6  #000000
 set_from_resource $cyan        color14 #000000
 set_from_resource $darkwhite   color7  #000000
 set_from_resource $white       color15 #000000
-set_from_resource $accent      color13  #000000
+set_from_resource $accent      color6  #000000
 
 # window colors
 #                       border    background  text        indicator
@@ -194,21 +207,23 @@ new_window pixel 2
 
 # Start i3bar to display a workspace bar (plus the system information i3status
 # finds out, if available)
-bar {
-  status_command  i3status -c ~/.config/i3/i3status.conf
-  position        top
-
-  strip_workspace_numbers yes
-
-  colors {
-    background $bground
-    separator  $bground
-    #                   border      background      text
-    focused_workspace   $fground    $bground        $white
-    inactive_workspace  $bground    $bground        $darkwhite
-    urgent_workspace    $darkred    $darkred        $white
-  }
-}
+#bar {
+#  font pango: Monoisome 10
+#
+#  status_command  i3status -c ~/.config/i3/i3status.conf
+#  position        top
+#
+#  strip_workspace_numbers yes
+#
+#  colors {
+#    background $bground
+#    separator  $bground
+#    #                   border      background      text
+#    focused_workspace   $fground    $bground        $white
+#    inactive_workspace  $bground    $bground        $darkwhite
+#    urgent_workspace    $darkred    $darkred        $white
+#  }
+#}
 
 # xf86
 bindsym XF86AudioRaiseVolume exec --no-startup-id amixer set Master 2%+
@@ -274,12 +289,10 @@ mode $redshift_mode {
 }
 
 # class assignments
-assign [class="Enpass"] "99:&#xf023;"
-for_window [class="Spotify"] move workspace "98:&#xf04b;"
-# assign [class="Spotify"] "98:&#xf001;"
-assign [class="Transmission"] "97:&#xf019;"
-assign [class="Gimp"] "96:&#xf1fc;"
-assign [class="Thunderbird"] "95:&#xf0e0;"
+assign [class="Enpass"] "99:enpass"
+for_window [class="Spotify"] move workspace "98:music"
+# assign [class="Spotify"] "98:music"
+assign [class="Transmission"] "97:download"
 
 for_window [class=".*"] border pixel 3
 
@@ -290,6 +303,7 @@ smart_gaps on
 
 # startup stuff
 exec_always --no-startup-id setxkbmap -layout us -variant altgr-intl -option nodeadkeys -option "lv3:caps_switch"
+exec_always --no-startup-id ~/.config/polybar/launch.sh
 
 exec compton --backend glx --vsync opengl-swc
 exec redshift -l 49.8:8.6
