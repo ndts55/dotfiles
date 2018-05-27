@@ -18,7 +18,7 @@ bindsym $mod+Return exec i3-sensible-terminal
 bindsym $mod+Shift+q kill
 
 # start rofi (a program launcher)
-bindsym $mod+d exec rofi -theme default -show run -width 25 -font "Terminess Powerline 10"
+bindsym $mod+d exec rofi -show run -width 25 -font "Terminess Powerline 10"
 
 # change focus hjkl
 bindsym $mod+h focus left
@@ -222,6 +222,9 @@ bindsym XF86AudioPrev exec playerctl previous
 
 bindsym XF86Calculator exec speedcrunch
 
+bindsym XF86MonBrightnessDown exec xbacklight -dec 10
+bindsym XF86MonBrightnessUp exec xbacklight -inc 10
+
 # Shift
 bindsym $mod+Shift+comma move workspace prev
 bindsym $mod+Shift+period move workspace next
@@ -232,7 +235,7 @@ bindsym $mod+Control+Print exec maim -s ~/Pictures/$(date +%s).png
 # Shift+Control
 bindsym $mod+Shift+Control+i [urgent="latest"] kill
 bindsym $mod+Shift+Control+l exec ~/.config/i3/lock.sh
-bindsym $mod+Shift+Control+p mode $roman_empire_mode
+bindsym $mod+Shift+Control+p mode $power_mode
 bindsym $mod+Shift+Control+r mode $redshift_mode
 
 # just mod
@@ -250,12 +253,12 @@ bindsym --whole-window $mod+button4 workspace prev
 bindsym --whole-window $mod+button5 workspace next
 
 # custom modes
-set $roman_empire_mode "(s)uspend, (p)oweroff, (q)uit, (r)eboot"
-mode $roman_empire_mode {
+set $power_mode "(h)ibernate, (p)oweroff, (q)uit, (r)eboot"
+mode $power_mode {
   bindsym p exec systemctl poweroff
   bindsym q exec --no-startup-id i3-msg exit, mode "default"
   bindsym r exec systemctl reboot
-  bindsym s exec ~/.config/i3/lock.sh, exec systemctl suspend, mode "default"
+  bindsym h exec systemctl hibernate, mode "default"
 
   bindsym Return mode "default"
   bindsym Escape mode "default"
