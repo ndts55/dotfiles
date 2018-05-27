@@ -24,7 +24,7 @@ set numberwidth=2		" minimum number of columns to show for line numbers
 set laststatus=2		" always show a status line
 set visualbell t_vb=		" no beeps or flashes
 
-set wrap	      		" wrap long lines
+set wrap				" wrap long lines
 set linebreak			" wrap at 'breakat' char vs display edge if 'wrap' on
 set display=lastline		" display as much of a window's last line as possible
 
@@ -34,8 +34,8 @@ set splitbelow			" split new horizontal windows below
 set winminheight=0		" allow windows to shrink to status line
 set winminwidth=0		" allow windows to shrink to vertical separator
 
-set expandtab			" insert spaces for <Tab> press
-" set noexpandtab   " use <Tab> for <Tab> press
+" set expandtab			" insert spaces for <Tab> press
+" set noexpandtab		" use <Tab> for <Tab> press
 set smarttab			" tab respects 'shiftwidth', 'tapstop', 'softtapstop'
 set tabstop=4			" set the visible width of tabs
 set softtabstop=2		" edit as if tabs are 2 characters wide
@@ -61,7 +61,7 @@ set whichwrap+=<,>,[,]		" allow left/right arrows to move across lines
 set nomodeline			" ignore modeline
 set nojoinspaces		" don't get fancy with the spaces when joining lines
 
-set listchars=tab:>-
+set listchars=tab:\\.
 set listchars+=trail:.
 set listchars+=extends:>
 set listchars+=precedes:<
@@ -143,6 +143,9 @@ Plug 'chriskempson/base16-vim'
 " haskell
 Plug 'neovimhaskell/haskell-vim', { 'for': 'hs' }
 
+" gruvbox
+Plug 'morhetz/gruvbox'
+
 call plug#end()
 
 " Airline
@@ -161,7 +164,8 @@ let g:neotex#enabled=2
 
 " colorscheme
 set background=dark
-colorscheme base16-tomorrow-night
+colorscheme gruvbox
 
-" Base 16
-set termguicolors
+" gruvbox
+let g:gruvbox_contrast_dark='hard'
+
