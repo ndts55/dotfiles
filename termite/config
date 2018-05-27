@@ -1,6 +1,6 @@
 
 [options]
-font = Noto Sans Mono 10
+font = Monoid 10
 
 [colors]
 # hard contrast: background = #1d2021
