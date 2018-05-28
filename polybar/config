@@ -161,8 +161,8 @@ ramp-signal-foreground = ${colors.foreground}
 type = internal/date
 interval = 5
 
-date = " %a, %Y.%m.%d"
-time = "%H.%M "
+date = "%a, %Y.%m.%d"
+time = "%H.%M"
 
 format-prefix-foreground = ${colors.foreground}
 format-underline = ${colors.color12}
