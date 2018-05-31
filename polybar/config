@@ -149,11 +149,11 @@ label-connected = %essid%
 
 format-disconnected = <label-disconnected>
 format-disconnected-underline = ${self.format-connected-underline}
-label-disconnected = 睊no wifi
+label-disconnected = no wifi
 label-disconnected-foreground = ${colors.foreground-alt}
 
-ramp-signal-0 = 睊 
-ramp-signal-1 = 直
+ramp-signal-0 =  
+ramp-signal-1 = 
 ramp-signal-2 = 
 ramp-signal-foreground = ${colors.foreground}
 
