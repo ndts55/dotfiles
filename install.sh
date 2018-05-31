@@ -1,47 +1,76 @@
 #!/bin/bash
 
-current_dir="$( cd "$( dirname "${BASH_SOURCE[0]}" )" && pwd )"
+function create_link {
+	# if dir and link or file just leave as is
+	if [ -L "$2" ]; then
+		if [ -d "$2" ]; then
+			echo "$2 is link to dir already"
+		elif [ -f "$2" ]; then
+			echo "$2 is link to file already"
+		elif [ ! -e "$2" ]; then
+			echo "$2 links to non-existent file or dir"
+		else
+			echo "$2 is a link already"
+		fi
+		return
+	fi
 
-if [ ! -d ~/.config ]; then
-    mkdir ~/.config
+	# if doesn't exist just create link
+	if [ ! -e "$2" ]; then
+		ln -s "$1" "$2"
+		echo "created link from $1 to $2"
+		return
+	fi
+
+	# exists and is either not dir or not link
+	# rename and link
+	mv "$2" $2_old
+	echo "renamed $2 to $2_old"
+	ln -s "$1" "$2"
+	echo "created link from $1 to $2"
+}
+
+current_dir="$( cd "$( dirname "${BASH_SOURCE[0]}" )" && pwd )"
+config_dir="$HOME/.config"
+
+if [ ! -d $config_dir ]; then
+    mkdir $config_dir
 fi
 
+# compton
+create_link $current_dir/compton/compton.conf ~/.config/compton.conf
+
 # fish
-ln -s $current_dir/fish ~/.config/fish
-rm fish/fish
+create_link $current_dir/fish $config_dir/fish
 
 # home
-ln -s $current_dir/home/Xresources ~/.Xresources
-ln -s $current_dir/home/profile ~/.profile
-ln -s $current_dir/home/bashrc ~/.bashrc
-
-# theme
-ln -s $current_dir/xthemes/theme ~/.theme
+create_link $current_dir/home/Xresources $HOME/.Xresources
+create_link $current_dir/home/profile $HOME/.profile
+create_link $current_dir/home/bashrc $HOME/.bashrc
 
 # i3 wm
-ln -s $current_dir/i3 ~/.config/i3
-rm i3/i3
-
-# neovim
-ln -s $current_dir/nvim ~/.config/nvim
-rm nvim/nvim
-
-# compton
-ln -s $current_dir/compton/compton.conf ~/.config/compton.conf
-
-# rofi
-ln -s $current_dir/rofi ~/.local/share/rofi
-rm rofi/rofi
-
-# tmux
-ln -s $current_dir/tmux/tmux.conf ~/.tmux.conf
-
-# termite
-ln -s $current_dir/termite ~/.config/termite
-rm termite/termite
+create_link $current_dir/i3 $config_dir/i3
 
 # locale
-ln -s $current_dir/locale.conf /etc/locale.conf
+create_link $current_dir/locale.conf /etc/locale.conf
+
+# neovim
+create_link $current_dir/nvim ~/.config/nvim
 
 # polybar
-ln -s $current_dir/polybar ~/.config/polybar
+create_link $current_dir/polybar ~/.config/polybar
+
+# rofi
+create_link $current_dir/rofi ~/.local/share/rofi
+
+# termite
+create_link $current_dir/termite ~/.config/termite
+
+# theme
+create_link $current_dir/xthemes/theme $HOME/.theme
+
+# tmux
+create_link $current_dir/tmux/tmux.conf ~/.tmux.conf
+
+# zathura
+create_link $current_dir/zathura ~/.config/zathura
