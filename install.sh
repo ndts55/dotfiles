@@ -60,6 +60,9 @@ create_link $current_dir/nvim ~/.config/nvim
 # polybar
 create_link $current_dir/polybar ~/.config/polybar
 
+# ranger
+create_link $current_dir/ranger ~/.config/ranger
+
 # rofi
 create_link $current_dir/rofi ~/.local/share/rofi
 
