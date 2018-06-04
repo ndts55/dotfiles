@@ -1,2 +1,2 @@
-# linux-conf-ndts
+# dotfiles
 personal Linux configuration files
