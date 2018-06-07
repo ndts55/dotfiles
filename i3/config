@@ -293,6 +293,7 @@ assign [class="Enpass"] "99:enpass"
 for_window [class="Spotify"] move workspace "98:music"
 # assign [class="Spotify"] "98:music"
 assign [class="Transmission"] "97:download"
+assign [class="Steam"] "96:play"
 
 for_window [class=".*"] border pixel 3
 
