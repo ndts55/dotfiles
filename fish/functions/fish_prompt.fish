@@ -1,36 +1,36 @@
 function fish_prompt --description 'Write out the prompt'
 
-	set -g __fish_git_prompt_show_informative_status 1
+    set -g __fish_git_prompt_show_informative_status 1
 
-#	set -g __fish_git_prompt_color_branch magenta --bold
+#    set -g __fish_git_prompt_color_branch magenta --bold
 
-	set -g __fish_git_prompt_showupstream "auto"
+    set -g __fish_git_prompt_showupstream "auto"
 
-	set -g __fish_git_prompt_char_upstream_ahead "↑"
+    set -g __fish_git_prompt_char_upstream_ahead "↑"
 
-	set -g __fish_git_prompt_char_upstream_behind "↓"
+    set -g __fish_git_prompt_char_upstream_behind "↓"
 
-	set -g __fish_git_prompt_char_upstream_prefix ""
+    set -g __fish_git_prompt_char_upstream_prefix ""
 
-	set -g __fish_git_prompt_char_stagedstate "●"
-#	set -g __fish_git_prompt_color_stagedstate yellow
+    set -g __fish_git_prompt_char_stagedstate "●"
+#    set -g __fish_git_prompt_color_stagedstate yellow
 
-	set -g __fish_git_prompt_char_dirtystate "✚"
-#	set -g __fish_git_prompt_color_dirtystate blue
+    set -g __fish_git_prompt_char_dirtystate "✚"
+#    set -g __fish_git_prompt_color_dirtystate blue
 
-	set -g __fish_git_prompt_hide_untrackedfiles 1
-	set -g __fish_git_prompt_char_untrackedfiles "…"
-#	set -g __fish_git_prompt_color_untrackedfiles $fish_color_normal
+    set -g __fish_git_prompt_hide_untrackedfiles 1
+    set -g __fish_git_prompt_char_untrackedfiles "…"
+#    set -g __fish_git_prompt_color_untrackedfiles $fish_color_normal
 
-	set -g __fish_git_prompt_char_conflictedstate "✖"
-#	set -g __fish_git_prompt_color_invalidstate red
+    set -g __fish_git_prompt_char_conflictedstate "✖"
+#    set -g __fish_git_prompt_color_invalidstate red
 
-	set -g __fish_git_prompt_char_cleanstate "✔"
-#	set -g __fish_git_prompt_color_cleanstate green --bold
+    set -g __fish_git_prompt_char_cleanstate "✔"
+#    set -g __fish_git_prompt_color_cleanstate green --bold
 
     set -l last_status $status
 
-#	set -g __fish_prompt_normal (set_color normal)
+#    set -g __fish_prompt_normal (set_color normal)
 
     set -l color_cwd
     set -l prefix
@@ -50,18 +50,19 @@ function fish_prompt --description 'Write out the prompt'
 
     # PWD
     set_color -b $color_cwd
-	set_color black
-	echo -n " "
+    set_color black
+
+    if not test $last_status -eq 0
+        echo -n "✖"
+    end
+
+    echo -n " "
     echo -n (prompt_pwd)
 
     printf '%s ' (__fish_vcs_prompt)
 
-    if not test $last_status -eq 0
-        set_color $fish_color_error
-    end
-
     echo -n "$suffix "
 
-	set_color normal
-	echo -n " "
+    set_color normal
+    echo -n " "
 end
