@@ -251,7 +251,6 @@ bindsym $mod+Control+Print exec maim -s ~/Pictures/$(date +%s).png
 bindsym $mod+Shift+Control+i [urgent="latest"] kill
 bindsym $mod+Shift+Control+l exec ~/.config/i3/lock.sh
 bindsym $mod+Shift+Control+p mode $power_mode
-bindsym $mod+Shift+Control+r mode $redshift_mode
 
 # just mod
 bindsym $mod+e exec nemo
@@ -274,15 +273,6 @@ mode $power_mode {
   bindsym q exec --no-startup-id i3-msg exit, mode "default"
   bindsym r exec systemctl reboot
   bindsym h exec systemctl hibernate, mode "default"
-
-  bindsym Return mode "default"
-  bindsym Escape mode "default"
-}
-
-set $redshift_mode "(s)tart, (k)ill"
-mode $redshift_mode {
-  bindsym k exec pkill redshift, mode "default"
-  bindsym s exec redshift -l 49.8:8.6, mode "default"
 
   bindsym Return mode "default"
   bindsym Escape mode "default"
