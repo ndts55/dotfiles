@@ -130,9 +130,6 @@ Plug 'donRaphaco/neotex', {'for': 'tex'}
 " gruvbox
 Plug 'morhetz/gruvbox'
 
-" deoplete
-Plug 'Shougo/deoplete.nvim', { 'do' : ':UpdateRemotePlugins' }
-
 " CtrlP
 Plug 'kien/ctrlp.vim'
 
@@ -159,13 +156,6 @@ colorscheme gruvbox
 " gruvbox
 let g:gruvbox_contrast_dark='hard'
 set termguicolors
-
-" deoplete
-let g:deoplete#enable_at_startup=1
-let g:deoplete#enable_smart_case=1
-
-call deoplete#custom#source('_', 'disabled_syntax', ['Comment', 'String'])
-autocmd InsertLeave,CompleteDone * if pumvisible() == 0 | pclose | endif
 
 " CtrlP
 let g:ctrlp_map='<C-P>'
