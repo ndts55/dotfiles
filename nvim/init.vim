@@ -124,9 +124,6 @@ call plug#begin()
 Plug 'vim-airline/vim-airline'
 Plug 'vim-airline/vim-airline-themes'
 
-" NeoTex
-Plug 'donRaphaco/neotex', {'for': 'tex'}
-
 " gruvbox
 Plug 'morhetz/gruvbox'
 
@@ -145,9 +142,6 @@ if !exists('g:airline_symbols')
     let g:airline_symbols={}
 endif
 let g:airline_symbols.space="\ua0"
-
-" NeoTex
-let g:neotex#enabled=2
 
 " colorscheme
 set background=dark
