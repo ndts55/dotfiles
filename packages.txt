@@ -1,5 +1,8 @@
 acpid
+adapta-gtk-theme
 alsa-utils
+android-studio
+android-tools
 antergos-cinnamon-meta
 antergos-common-meta
 antergos-desktop-settings
@@ -24,6 +27,7 @@ cifs-utils
 compton
 coreutils
 crda
+criterion
 cryfs
 cryptsetup
 device-mapper
@@ -31,6 +35,7 @@ dhcpcd
 diffutils
 dmraid
 dosfstools
+dotnet-sdk
 e2fsprogs
 efibootmgr
 enpass-bin
@@ -43,6 +48,7 @@ filesystem
 findutils
 fish
 flex
+fsharp
 gawk
 gcc
 gcc-libs
@@ -50,11 +56,13 @@ gettext
 git
 glibc
 google-chrome
+gparted
 grep
 groff
 gufw
 gzip
 haveged
+heimdall
 htop
 i3-cinnamon-git
 i3-gaps
@@ -66,9 +74,11 @@ iproute2
 iputils
 ipw2100-fw
 ipw2200-fw
+jdk
 jfsutils
 jq
 jsoncpp
+kdenlive
 less
 lib32-mesa
 libtool
@@ -87,7 +97,7 @@ mdadm
 mlocate
 modemmanager
 mono
-nano
+neofetch
 neovim
 net-tools
 netctl
@@ -107,10 +117,12 @@ pkgconf
 pkgfile
 playerctl
 polybar
+postgresql
 powerline-fonts
 procps-ng
 psmisc
 pulseaudio-bluetooth
+python-pip
 ranger
 redshift
 reflector
@@ -118,10 +130,11 @@ reiserfsprogs
 rider
 rofi
 s-nail
-screenfetch
 sed
 shadow
+speedcrunch
 spotify
+steam
 sudo
 sysfsutils
 systemd
@@ -152,11 +165,13 @@ usbutils
 util-linux
 vi
 visual-studio-code-bin
+vitetris
 vlc
 wget
 which
 whois
 wireless_tools
+woeusb-git
 wpa_actiond
 xautolock
 xclip
