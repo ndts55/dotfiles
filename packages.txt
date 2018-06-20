@@ -1,7 +1,6 @@
 acpid
 adapta-gtk-theme
 alsa-utils
-android-studio
 android-tools
 antergos-cinnamon-meta
 antergos-common-meta
@@ -55,6 +54,7 @@ gcc-libs
 gettext
 git
 glibc
+go
 google-chrome
 gparted
 grep
@@ -97,7 +97,6 @@ mdadm
 mlocate
 modemmanager
 mono
-neofetch
 neovim
 net-tools
 netctl
