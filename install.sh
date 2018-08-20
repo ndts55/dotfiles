@@ -63,6 +63,9 @@ create_link $current_dir/polybar ~/.config/polybar
 # ranger
 create_link $current_dir/ranger ~/.config/ranger
 
+# redshift
+create_link $current_dir/redshift ~/.config/redshift
+
 # rofi
 create_link $current_dir/rofi ~/.local/share/rofi
 

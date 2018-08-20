@@ -297,6 +297,6 @@ exec_always --no-startup-id setxkbmap -layout us -variant altgr-intl -option nod
 exec_always --no-startup-id ~/.config/polybar/launch.sh
 
 exec compton --backend glx --vsync opengl-swc
-exec redshift -l 49.8:8.6
 exec ~/.config/i3/delete_win_folders.sh
+exec redshift
 
