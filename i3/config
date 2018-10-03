@@ -18,7 +18,7 @@ bindsym $mod+Return exec i3-sensible-terminal
 bindsym $mod+Shift+q kill
 
 # start rofi (a program launcher)
-bindsym $mod+d exec rofi -show run -width 25 -font "Inconsolata 12"
+bindsym $mod+d exec rofi -show run -width 25 -font "Inconsolata 12" -theme default
 
 # change focus hjkl
 bindsym $mod+h focus left

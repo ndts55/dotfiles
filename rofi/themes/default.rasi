@@ -39,7 +39,7 @@ mainbox {
 }
 message {
     border:           1px dash 0px 0px ;
-    border-color:     @separatorcolor;
+    border-color:     @separator-color;
     padding:          1px ;
 }
 textbox {
@@ -48,7 +48,7 @@ textbox {
 listview {
     fixed-height:     0;
     border:           2px dash 0px 0px ;
-    border-color:     @separatorcolor;
+    border-color:     @separator-color;
     spacing:          2px ;
     scrollbar:        true;
     padding:          2px 0px 0px ;
@@ -102,7 +102,7 @@ scrollbar {
 }
 sidebar {
     border:           2px dash 0px 0px ;
-    border-color:     @separatorcolor;
+    border-color:     @separator-color;
 }
 button {
     spacing:          0;
