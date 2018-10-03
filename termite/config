@@ -3,41 +3,51 @@
 font = DejaVu Sans Mono 10
 
 [colors]
-# hard contrast:
-background = #1d2021
-# background = #282828
-# soft contrast: background = #32302f
-foreground = #ebdbb2
-foreground_bold = #ebdbb2
+# Base16 Outrun Dark
+# Author: Hugo Delahousse (http://github.com/hugodelahousse/)
 
-# dark0 + gray
-color0 = #282828
-color8 = #928374
+foreground          = #D0D0FA
+foreground_bold     = #E0E0FF
+cursor              = #E0E0FF
+cursor_foreground   = #00002A
+background          = rgba(0, 0, 42)
 
-# neutral_red + bright_red
-color1 = #cc241d
-color9 = #fb4934
+# 16 color space
 
-# neutral_green + bright_green
-color2 = #98971a
-color10 = #b8bb26
+# Black, Gray, Silver, White
+color0  = #00002A
+color8  = #50507A
+color7  = #D0D0FA
+color15 = #F5F5FF
 
-# neutral_yellow + bright_yellow
-color3 = #d79921
-color11 = #fabd2f
+# Red
+color1  = #FF4242
+color9  = #FF4242
 
-# neutral_blue + bright_blue
-color4 = #458588
-color12 = #83a598
+# Green
+color2  = #59F176
+color10 = #59F176
 
-# neutral_purple + bright_purple
-color5 = #b16286
-color13 = #d3869b
+# Yellow
+color3  = #F3E877
+color11 = #F3E877
 
-# neutral_aqua + faded_aqua
-color6 = #689d6a
-color14 = #8ec07c
+# Blue
+color4  = #66B0FF
+color12 = #66B0FF
 
-# light4 + light1
-color7 = #a89984
-color15 = #ebdbb2
+# Purple
+color5  = #F10596
+color13 = #F10596
+
+# Teal
+color6  = #0EF0F0
+color14 = #0EF0F0
+
+# Extra colors
+color16 = #FC8D28
+color17 = #F003EF
+color18 = #20204A
+color19 = #30305A
+color20 = #B0B0DA
+color21 = #E0E0FF
