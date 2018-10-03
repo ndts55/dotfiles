@@ -124,11 +124,11 @@ call plug#begin()
 Plug 'vim-airline/vim-airline'
 Plug 'vim-airline/vim-airline-themes'
 
-" gruvbox
-Plug 'morhetz/gruvbox'
-
 " CtrlP
 Plug 'kien/ctrlp.vim'
+
+" base16 themes
+Plug 'chriskempson/base16-vim'
 
 call plug#end()
 
@@ -145,10 +145,8 @@ let g:airline_symbols.space="\ua0"
 
 " colorscheme
 set background=dark
-colorscheme gruvbox
+colorscheme base16-outrun-dark
 
-" gruvbox
-let g:gruvbox_contrast_dark='hard'
 set termguicolors
 
 " CtrlP
