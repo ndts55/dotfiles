@@ -130,6 +130,10 @@ Plug 'kien/ctrlp.vim'
 " base16 themes
 Plug 'chriskempson/base16-vim'
 
+
+" Neotex
+Plug 'donRaphaco/neotex', { 'for': 'tex' }
+
 call plug#end()
 
 " Airline
