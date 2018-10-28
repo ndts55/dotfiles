@@ -78,5 +78,8 @@ create_link $current_dir/xthemes/theme $HOME/.theme
 # tmux
 create_link $current_dir/tmux/tmux.conf ~/.tmux.conf
 
+# qutebrowser
+create_link $current_dir/qutebrowser/config.py ~/.config/qutebrowser/config.py
+
 # zathura
 create_link $current_dir/zathura ~/.config/zathura
