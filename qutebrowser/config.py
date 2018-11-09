@@ -9,22 +9,22 @@ config.bind('J', 'tab-prev')
 # Base16 qutebrowser template by theova
 # Outrun Dark scheme by Hugo Delahousse (http://github.com/hugodelahousse/)
 
-base00 = "#00002A"
-base01 = "#20204A"
-base02 = "#30305A"
-base03 = "#50507A"
-base04 = "#B0B0DA"
-base05 = "#D0D0FA"
-base06 = "#E0E0FF"
-base07 = "#F5F5FF"
-base08 = "#FF4242"
-base09 = "#FC8D28"
-base0A = "#F3E877"
-base0B = "#59F176"
-base0C = "#0EF0F0"
-base0D = "#66B0FF"
-base0E = "#F10596"
-base0F = "#F003EF"
+base00 = "#00002A" # background
+base01 = "#20204A" # dark blue + 1
+base02 = "#30305A" # dark blue + 2
+base03 = "#50507A" # dark blue + 3
+base04 = "#B0B0DA" # light blue
+base05 = "#D0D0FA" # light blue + 1
+base06 = "#E0E0FF" # light blue + 2
+base07 = "#F5F5FF" # white pretty much
+base08 = "#FF4242" # red
+base09 = "#FC8D28" # orange
+base0A = "#F3E877" # yellow
+base0B = "#59F176" #green
+base0C = "#0EF0F0" # cyan
+base0D = "#66B0FF" # blue
+base0E = "#F10596" # pink
+base0F = "#F003EF" # magenta
 
 # set qutebrowser colors
 
@@ -234,7 +234,7 @@ c.colors.tabs.indicator.error = base08
 c.colors.tabs.odd.fg = base05
 
 # Background color of unselected odd tabs.
-c.colors.tabs.odd.bg = base03
+c.colors.tabs.odd.bg = base00
 
 # Foreground color of unselected even tabs.
 c.colors.tabs.even.fg = base05
