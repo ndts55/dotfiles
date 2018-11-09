@@ -47,6 +47,7 @@ create_link $current_dir/fish $config_dir/fish
 create_link $current_dir/home/Xresources $HOME/.Xresources
 create_link $current_dir/home/profile $HOME/.profile
 create_link $current_dir/home/bashrc $HOME/.bashrc
+create_link $current_dir/home/theme $HOME/.theme
 
 # i3 wm
 create_link $current_dir/i3 $config_dir/i3
@@ -72,14 +73,12 @@ create_link $current_dir/rofi ~/.local/share/rofi
 # termite
 create_link $current_dir/termite ~/.config/termite
 
-# theme
-create_link $current_dir/xthemes/theme $HOME/.theme
-
 # tmux
 create_link $current_dir/tmux/tmux.conf ~/.tmux.conf
 
 # qutebrowser
 create_link $current_dir/qutebrowser/config.py ~/.config/qutebrowser/config.py
+create_link $current_dir/qutebrowser/theme.py ~/.config/qutebrowser/theme.py
 
 # zathura
 create_link $current_dir/zathura ~/.config/zathura
