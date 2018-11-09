@@ -1,3 +1,6 @@
+[options]
+font = DejaVu Sans Mono 10
+
 [colors]
 # Base16 Outrun Dark
 # Author: Hugo Delahousse (http://github.com/hugodelahousse/)

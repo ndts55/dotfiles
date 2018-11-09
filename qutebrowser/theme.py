@@ -1,1 +1,1 @@
-/home/ndts/linux-conf-ndts/themes/outrun/qutebrowser.py
+/home/ndts/linux-conf-ndts/themes/paraiso/qutebrowser.py
