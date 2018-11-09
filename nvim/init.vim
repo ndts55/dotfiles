@@ -147,7 +147,7 @@ let g:airline_symbols.space="\ua0"
 
 " colorscheme
 set background=dark
-colorscheme base16-outrun-dark
+colorscheme base16-paraiso
 
 set termguicolors
 
