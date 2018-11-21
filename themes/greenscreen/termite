@@ -1,3 +1,6 @@
+[options]
+font = DejaVu Sans Mono 10
+
 [colors]
 # Base16 Green Screen
 # Author: Chris Kempson (http://chriskempson.com)
