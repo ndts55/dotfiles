@@ -52,9 +52,6 @@ create_link $current_dir/home/theme $HOME/.theme
 # i3 wm
 create_link $current_dir/i3 $config_dir/i3
 
-# locale
-create_link $current_dir/locale.conf /etc/locale.conf
-
 # neovim
 create_link $current_dir/nvim ~/.config/nvim
 
