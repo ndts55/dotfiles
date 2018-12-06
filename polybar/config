@@ -44,8 +44,12 @@ primary = ${self.color15}
 secondary = ${self.color5}
 alert = ${self.color9}
 
-wlanunderline = ${self.color5}
-batteryunderline = ${self.color6}
+wlanunderline = ${self.color4}
+
+chargingunderline = ${self.color6}
+fullychargedunderline = ${self.color10}
+dischargingunderline = ${self.color5}
+
 dateunderline = ${self.color12}
 
 [bar/example]
@@ -191,14 +195,12 @@ adapter = ADP1
 full-at = 98
 
 format-charging = C <label-charging>
-format-charging-underline = ${colors.batteryunderline}
+format-charging-underline = ${colors.chargingunderline}
 
 format-discharging = <label-discharging>
-format-discharging-underline = ${self.format-charging-underline}
+format-discharging-underline = ${colors.dischargingunderline}
 
-format-full-prefix = "F "
-format-full-prefix-foreground = ${colors.foreground-alt}
-format-full-underline = ${self.format-charging-underline}
+format-full-underline = ${colors.fullychargedunderline}
 
 [settings]
 screenchange-reload = true
