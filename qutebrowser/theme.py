@@ -1,1 +1,1 @@
-/home/ndts/linux-conf-ndts/themes/mocha//qutebrowser.py
+/home/ndts/dotfiles/themes/mocha/qutebrowser.py
