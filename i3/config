@@ -286,6 +286,7 @@ for_window [class="Spotify"] move workspace "98:music"
 assign [class="Transmission"] "97:download"
 assign [class="Deluge"] "97:download"
 assign [class="Steam"] "96:play"
+assign [class="Telegram"] "95:messaging"
 
 for_window [class=".*"] border pixel 3
 
@@ -299,6 +300,4 @@ exec_always --no-startup-id setxkbmap -layout us -variant altgr-intl -option nod
 exec_always --no-startup-id ~/.config/polybar/launch.sh
 
 exec compton --backend glx --vsync opengl-swc
-exec ~/.config/i3/delete_win_folders.sh
-exec redshift-gtk
 
