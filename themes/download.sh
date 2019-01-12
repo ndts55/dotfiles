@@ -10,3 +10,6 @@ curl https://raw.githubusercontent.com/khamer/base16-termite/master/themes/base1
 
 # download qutebrowser
 curl https://raw.githubusercontent.com/theova/base16-qutebrowser/master/themes/base16-$1.config.py >> $1/qutebrowser.py
+
+# download rofi
+curl https://gitlab.com/0xdec/base16-rofi/raw/master/themes/base16-$1.rasi >> $1/rofi.rasi
