@@ -36,7 +36,7 @@ bg0_s = #32302f
 fg = {self.color15}
 fg3 = #bdae93
 
-background = ${self.color0} 
+background = ${self.color0}
 background-alt = ${self.bg0_s}
 foreground = ${self.color15}
 foreground-alt = ${self.fg3}
@@ -46,8 +46,8 @@ alert = ${self.color9}
 
 wlanunderline = ${self.color4}
 
-chargingunderline = ${self.color6}
-fullychargedunderline = ${self.color10}
+chargingunderline = ${self.color10}
+fullychargedunderline = ${self.color12}
 dischargingunderline = ${self.color5}
 
 dateunderline = ${self.color12}
