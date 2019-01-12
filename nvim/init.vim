@@ -139,7 +139,7 @@ call plug#end()
 " Airline
 let g:airline#extensions#tabline#enabled=1
 let g:airline_powerline_fonts=1
-let g:airline_theme='base16_mocha'
+let g:airline_theme='base16_porple'
 if !exists('g:airline_symbols')
     let g:airline_symbols={}
 endif
@@ -147,7 +147,7 @@ let g:airline_symbols.space="\ua0"
 
 " colorscheme
 set background=dark
-colorscheme base16-mocha
+colorscheme base16-porple
 
 set termguicolors
 
