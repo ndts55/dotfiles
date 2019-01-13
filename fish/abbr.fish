@@ -19,7 +19,7 @@ alias gl="git pull"
 alias gd="git diff"
 alias gdiscard="git checkout --"
 
-# aurman
+# pacman
 alias pqs="pacman -Qs"
 alias porphans="pacman -Qtdq"
 alias pqi="pacman -Qi"
