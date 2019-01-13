@@ -23,6 +23,7 @@ alias gdiscard="git checkout --"
 alias pqs="pacman -Qs"
 alias porphans="pacman -Qtdq"
 alias pqi="pacman -Qi"
+alias prm="sudo pacman -Rs"
 
 # tar
 alias gzunpack="tar -xvzf"
