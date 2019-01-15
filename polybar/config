@@ -163,7 +163,7 @@ format-underline = ${colors.dateunderline}
 label = %date%%time%
 
 [module/volume]
-type = internal/alsa
+type = internal/pulseaudio
 
 format-volume = <bar-volume>
 label-volume-foreground = ${root.foreground}
