@@ -31,3 +31,9 @@ alias gzpack="tar -cvzf"
 alias tarunpack="tar -xvf"
 alias tarpack="tar -cvf"
 
+# protonvpn-cli
+alias protonrandom="sudo protonvpn-cli -r"
+alias protonfast="sudo protonvpn-cli -f"
+alias protondisconnect="sudo protonvpn-cli -d"
+alias protonstatus="sudo protonvpn-cli --status"
+
