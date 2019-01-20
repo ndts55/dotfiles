@@ -1,1 +1,1 @@
-/home/ndts/dotfiles/themes/porple/qutebrowser.py
+/home/ndts/dotfiles/themes/nord/qutebrowser.py
