@@ -258,6 +258,8 @@ bindsym $mod+n exec --no-startup-id numlockx toggle
 
 bindsym $mod+comma workspace prev
 bindsym $mod+period workspace next
+bindsym $mod+Tab workspace next
+bindsym $mod+Shift+Tab workspace prev
 
 bindsym $mod+Print exec maim -s | xclip -selection clipboard -t image/png
 
