@@ -155,7 +155,7 @@ type = internal/date
 interval = 1
 
 date = "%Y-%m-%d"
-time = "—%H:%M:%S%z"
+time = " — %H:%M — %a"
 
 format-prefix-foreground = ${colors.foreground}
 format-underline = ${colors.dateunderline}
