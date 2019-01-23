@@ -24,12 +24,7 @@ alias pqs="pacman -Qs"
 alias porphans="pacman -Qtdq"
 alias pqi="pacman -Qi"
 alias prm="sudo pacman -Rs"
-
-# tar
-alias gzunpack="tar -xvzf"
-alias gzpack="tar -cvzf"
-alias tarunpack="tar -xvf"
-alias tarpack="tar -cvf"
+alias pinst="sudo pacman -S"
 
 # protonvpn-cli
 alias proton="sudo protonvpn-cli"
