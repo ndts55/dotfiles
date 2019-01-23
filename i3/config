@@ -67,42 +67,6 @@ bindsym $mod+space focus mode_toggle
 # focus the parent container
 bindsym $mod+a focus parent
 
-# workspace names template
-# set $one "1:"
-# set $two "2:"
-# set $three "3:"
-# set $four "4:"
-# set $five "5:"
-# set $six "6:"
-# set $seven "7:"
-# set $eight "8:"
-# set $nine "9:"
-# set $ten "10:"
-
-# standard workspace names
-# set $one "1:1"
-# set $two "2:2"
-# set $three "3:3"
-# set $four "4:4"
-# set $five "5:5"
-# set $six "6:6"
-# set $seven "7:7"
-# set $eight "8:8"
-# set $nine "9:9"
-# set $ten "10:10"
-
-# nibble
-# set $one "1:0001"
-# set $two "2:0010"
-# set $three "3:0011"
-# set $four "4:0100"
-# set $five "5:0101"
-# set $six "6:0110"
-# set $seven "7:0111"
-# set $eight "8:1000"
-# set $nine "9:1001"
-# set $ten "10:1010"
-
 # letters
 set $one "1:one"
 set $two "2:two"
@@ -110,10 +74,10 @@ set $three "3:three"
 set $four "4:four"
 set $five "5:five"
 set $six "6:six"
-set $seven "7:seven"
-set $eight "8:eight"
-set $nine "9:nine"
-set $ten "10:ten"
+set $seven "7:chat"
+set $eight "8:listen"
+set $nine "9:play"
+set $ten "10:download"
 
 
 # switch to workspace
@@ -280,12 +244,12 @@ mode $power_mode {
 }
 
 # class assignments
-assign [class="Enpass"] "99:enpass"
-for_window [class="Spotify"] move workspace "98:music"
+assign [class="Telegram"] $seven
+for_window [class="Spotify"] move workspace $eight
 # assign [class="Spotify"] "98:music"
-assign [class="Transmission"] "97:download"
-assign [class="Deluge"] "97:download"
-assign [class="Steam"] "96:play"
+assign [class="Steam"] $nine
+assign [class="Transmission"] $ten
+assign [class="Deluge"] $ten
 
 for_window [class=".*"] border pixel 3
 
