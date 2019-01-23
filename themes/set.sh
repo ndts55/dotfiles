@@ -23,7 +23,6 @@ fi
 xr=$theme_dir/xresources
 qb=$theme_dir/qutebrowser.py
 ro=$theme_dir/rofi.rasi
-te=$theme_dir/termite
 
 if [ ! -e $xr ]; then
     echo "X | $xr does not exist"
@@ -40,15 +39,9 @@ if [ ! -e $ro ]; then
     exit
 fi
 
-if [ ! -e $te ]; then
-    echo "X | $te does not exist"
-    exit
-fi
-
 override_link $xr $current_dir/../home/theme
 override_link $qb $current_dir/../qutebrowser/theme.py
 override_link $ro $current_dir/../rofi/themes/default.rasi
-override_link $te $current_dir/../termite/config
 
 xrdb -merge ~/.Xresources
 xrdb -merge ~/.theme

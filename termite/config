@@ -1,1 +1,3 @@
-/home/ndts/dotfiles/themes/monokai/termite
+[options]
+font = DejaVu Sans Mono 10
+
