@@ -52,9 +52,6 @@ create_link $current_dir/home/theme $HOME/.theme
 # i3 wm
 create_link $current_dir/i3 $config_dir/i3
 
-# kitty
-create_link $current_dir/kitty $config_dir/kitty
-
 # neovim
 create_link $current_dir/nvim ~/.config/nvim
 
