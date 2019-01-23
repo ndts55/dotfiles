@@ -40,9 +40,6 @@ fi
 # compton
 create_link $current_dir/compton/compton.conf ~/.config/compton.conf
 
-# dunst
-create_link $current_dir/dunst $config_dir/dunst
-
 # fish
 create_link $current_dir/fish $config_dir/fish
 
