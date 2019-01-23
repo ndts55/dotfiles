@@ -79,3 +79,8 @@ create_link $current_dir/qutebrowser/theme.py ~/.config/qutebrowser/theme.py
 
 # zathura
 create_link $current_dir/zathura ~/.config/zathura
+
+if [ ! -d "$config_dir/base16-shell" ]; then
+    echo "D |  downloading base16-shell repository"
+    git clone https://github.com/chriskempson/base16-shell.git ~/.config/base16-shell
+fi
