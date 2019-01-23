@@ -137,13 +137,13 @@ Plug 'donRaphaco/neotex', { 'for': 'tex' }
 call plug#end()
 
 " Airline
-let g:airline#extensions#tabline#enabled=1
-let g:airline_powerline_fonts=1
-let g:airline_theme='base16_monokai'
+let g:airline#extensions#tabline#enabled = 1
+let g:airline_powerline_fonts = 1
+let g:airline_theme = 'base16_monokai'
 if !exists('g:airline_symbols')
-    let g:airline_symbols={}
+    let g:airline_symbols = {}
 endif
-let g:airline_symbols.space="\ua0"
+let g:airline_symbols.space = "\ua0"
 
 " colorscheme
 set background=dark
@@ -152,5 +152,5 @@ colorscheme base16-monokai
 set termguicolors
 
 " CtrlP
-let g:ctrlp_map='<C-P>'
-let g:ctrlp_cmd='CtrlP'
+let g:ctrlp_map = '<C-P>'
+let g:ctrlp_cmd = 'CtrlP'
