@@ -117,6 +117,9 @@ nnoremap <C-J> :wincmd j<CR>
 nnoremap <C-K> :wincmd k<CR>
 nnoremap <C-L> :wincmd l<CR>
 
+nnoremap <Leader><Tab> :bnext<CR>
+nnoremap <Leader><S-Tab> :bprevious<CR>
+
 " Plug
 call plug#begin()
 
