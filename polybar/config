@@ -46,11 +46,11 @@ alert = ${self.color9}
 
 wlanunderline = ${self.color4}
 
-chargingunderline = ${self.color10}
-fullychargedunderline = ${self.color12}
-dischargingunderline = ${self.color5}
+chargingunderline = ${self.color12}
+fullychargedunderline = ${self.color2}
+dischargingunderline = ${self.color9}
 
-dateunderline = ${self.color12}
+dateunderline = ${self.color4}
 
 [bar/example]
 monitor = ${env:MONITOR:eDP-1}
@@ -197,7 +197,7 @@ full-at = 98
 format-charging = C <label-charging>
 format-charging-underline = ${colors.chargingunderline}
 
-format-discharging = <label-discharging>
+format-discharging = D <label-discharging>
 format-discharging-underline = ${colors.dischargingunderline}
 
 format-full-underline = ${colors.fullychargedunderline}
