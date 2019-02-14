@@ -215,7 +215,6 @@ bindsym $mod+Shift+period move workspace next
 bindsym $mod+Control+Print exec maim -s ~/Pictures/$(date +%s).png
 
 # Shift+Control
-bindsym $mod+Shift+Control+i [urgent="latest"] kill
 bindsym $mod+Shift+Control+l exec ~/.config/i3/lock.sh
 bindsym $mod+Shift+Control+p mode $power_mode
 
