@@ -174,65 +174,49 @@ client.urgent           $red      $red        $white      $red
 
 new_window pixel 2
 
-# Start i3bar to display a workspace bar (plus the system information i3status
-# finds out, if available)
-#bar {
-#  font pango: Monoisome 10
-#
-#  status_command  i3status -c ~/.config/i3/i3status.conf
-#  position        top
-#
-#  strip_workspace_numbers yes
-#
-#  colors {
-#    background $bground
-#    separator  $bground
-#    #                   border      background      text
-#    focused_workspace   $fground    $bground        $white
-#    inactive_workspace  $bground    $bground        $darkwhite
-#    urgent_workspace    $darkred    $darkred        $white
-#  }
-#}
-
 # xf86
+## volume
 bindsym XF86AudioRaiseVolume exec --no-startup-id pulseaudio-ctl up
 bindsym XF86AudioLowerVolume exec --no-startup-id pulseaudio-ctl down
 bindsym XF86AudioMute exec --no-startup-id pulseaudio-ctl mute
 
+## media control
 bindsym XF86AudioPlay exec playerctl play-pause
 bindsym XF86AudioPause exec playerctl play-pause
 bindsym XF86AudioNext exec playerctl next
 bindsym XF86AudioPrev exec playerctl previous
 
+## backlight
 bindsym XF86MonBrightnessDown exec xbacklight -dec 10
 bindsym XF86MonBrightnessUp exec xbacklight -inc 10
 
-# Shift
+# workspace move
 bindsym $mod+Shift+comma move workspace prev
 bindsym $mod+Shift+period move workspace next
 
-# Control
-bindsym $mod+Control+Print exec maim -s ~/Pictures/$(date +%s).png
-
-# Shift+Control
-bindsym $mod+Shift+Control+l exec ~/.config/i3/lock.sh
-bindsym $mod+Shift+Control+p mode $power_mode
-
-# just mod
-bindsym $mod+e exec nautilus
-bindsym $mod+i [urgent="latest"] focus
-bindsym $mod+n exec --no-startup-id numlockx toggle
-
+# workspace switch
+## keys
 bindsym $mod+comma workspace prev
 bindsym $mod+period workspace next
+
+## tab
 bindsym $mod+Tab workspace next
 bindsym $mod+Shift+Tab workspace prev
 
-bindsym $mod+Print exec maim -s | xclip -selection clipboard -t image/png
-
-# mouse
+## scroll
 bindsym --whole-window $mod+button4 workspace prev
 bindsym --whole-window $mod+button5 workspace next
+
+# screenshots
+bindsym $mod+Print exec gscreenshot-cli -sc
+bindsym $mod+Shift+Print exec gscreenshot
+
+# usability
+bindsym $mod+e exec nautilus
+bindsym $mod+i [urgent="latest"] focus
+
+bindsym $mod+Shift+Control+l exec ~/.config/i3/lock.sh
+bindsym $mod+Shift+Control+p mode $power_mode
 
 # custom modes
 set $power_mode "(h)ibernate, (p)oweroff, (q)uit, (r)eboot"
