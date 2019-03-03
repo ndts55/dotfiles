@@ -208,8 +208,7 @@ bindsym --whole-window $mod+button4 workspace prev
 bindsym --whole-window $mod+button5 workspace next
 
 # screenshots
-bindsym $mod+Print exec gscreenshot-cli -sc
-bindsym $mod+Shift+Print exec gscreenshot
+bindsym $mod+Print exec maim -s | xclip -selection clipboard -t image/png
 
 # usability
 bindsym $mod+e exec nautilus
