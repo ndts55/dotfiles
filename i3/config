@@ -232,6 +232,7 @@ mode $power_mode {
 # class assignments
 assign [class="Telegram"] $seven
 assign [class="whats-app-nativefier-d52542"] $seven
+assign [class="discord"] $seven
 for_window [class="Spotify"] move workspace $eight
 # assign [class="Spotify"] "98:music"
 assign [class="Steam"] $nine
