@@ -239,6 +239,7 @@ assign [class="Steam"] $nine
 assign [class="Transmission"] $ten
 assign [class="Deluge"] $ten
 
+for_window [class="Qalculate-gtk"] floating enable
 for_window [class=".*"] border pixel 3
 
 # i3-gaps stuff
