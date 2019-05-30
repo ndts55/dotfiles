@@ -52,7 +52,7 @@ bindsym $mod+semicolon split v
 bindsym $mod+apostrophe split h
 
 # enter fullscreen mode for the focused container
-bindsym $mod+f fullscreen toggle
+bindsym $mod+b fullscreen toggle
 
 # change container layout (stacked, tabbed, toggle split)
 bindsym $mod+w layout stacking
@@ -212,6 +212,7 @@ bindsym $mod+Print exec maim -s | xclip -selection clipboard -t image/png
 
 # usability
 bindsym $mod+e exec nemo
+bindsym $mod+f exec firefox
 bindsym $mod+i [urgent="latest"] focus
 
 bindsym $mod+Shift+Control+l exec ~/.config/i3/lock.sh

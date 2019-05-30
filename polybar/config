@@ -46,9 +46,9 @@ alert = ${self.color9}
 
 wlanunderline = ${self.color4}
 
-chargingunderline = ${self.color12}
-fullychargedunderline = ${self.color2}
-dischargingunderline = ${self.color9}
+chargingunderline = ${self.color15}
+fullychargedunderline = ${self.color12}
+dischargingunderline = ${self.color0}
 
 dateunderline = ${self.color4}
 

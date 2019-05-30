@@ -76,10 +76,6 @@ create_link $current_dir/termite ~/.config/termite
 # tmux
 create_link $current_dir/tmux/tmux.conf ~/.tmux.conf
 
-# qutebrowser
-create_link $current_dir/qutebrowser/config.py ~/.config/qutebrowser/config.py
-create_link $current_dir/qutebrowser/theme.py ~/.config/qutebrowser/theme.py
-
 # zathura
 create_link $current_dir/zathura ~/.config/zathura
 

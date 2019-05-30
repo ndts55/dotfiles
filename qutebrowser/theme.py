@@ -1,1 +1,0 @@
-/home/ndts/dotfiles/themes/monokai/qutebrowser.py
