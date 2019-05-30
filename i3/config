@@ -163,7 +163,7 @@ set_from_resource $darkcyan    color6  #000000
 set_from_resource $cyan        color14 #000000
 set_from_resource $darkwhite   color7  #000000
 set_from_resource $white       color15 #000000
-set_from_resource $accent      color6  #000000
+set_from_resource $accent      color15  #000000
 
 # window colors
 #                       border    background  text        indicator
