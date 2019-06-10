@@ -242,6 +242,7 @@ assign [class="Deluge"] $ten
 
 for_window [class="Qalculate-gtk"] floating enable
 for_window [class=".*"] border pixel 3
+for_window [class="Nextcloud"] floating disable
 
 # i3-gaps stuff
 gaps inner 7
