@@ -2,7 +2,7 @@ export EDITOR=nvim
 export BROWSER=google-chrome-stable
 export TERMINAL="termite"
 
-export MSBuildSDKsPath=/opt/dotnet/sdk/2.2.102/Sdks/
+export MSBuildSDKsPath=/opt/dotnet/sdk/2.2.105/Sdks/
 export PATH="$PATH:/home/ndts/.dotnet/tools:$MSBuildSDKsPath"
 
 xrdb -merge ~/.Xresources
