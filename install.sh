@@ -55,9 +55,6 @@ create_link $current_dir/home/theme $HOME/.theme
 # i3 wm
 create_link $current_dir/i3 $config_dir/i3
 
-# neovim
-create_link $current_dir/nvim ~/.config/nvim
-
 # polybar
 create_link $current_dir/polybar ~/.config/polybar
 
@@ -75,6 +72,9 @@ create_link $current_dir/termite ~/.config/termite
 
 # tmux
 create_link $current_dir/tmux/tmux.conf ~/.tmux.conf
+
+# vim
+create_link $current_dir/vim/vimrc ~/.vimrc
 
 # zathura
 create_link $current_dir/zathura ~/.config/zathura
