@@ -24,7 +24,7 @@ alias pqs="pacman -Qs"
 alias porphans="pacman -Qtdq"
 alias pqi="pacman -Qi"
 alias prm="sudo pacman -Rs"
-alias pinst="sudo pacman -S"
+alias pinst="yay -S"
 
 # protonvpn-cli
 alias proton="sudo protonvpn-cli"
