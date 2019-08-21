@@ -193,6 +193,10 @@ bindsym XF86MonBrightnessUp exec xbacklight -inc 10
 bindsym $mod+Shift+comma move workspace prev
 bindsym $mod+Shift+period move workspace next
 
+# monitor move
+bindsym $mod+Shift+Control+comma move workspace to output left
+bindsym $mod+Shift+Control+period move workspace to output right
+
 # workspace switch
 ## keys
 bindsym $mod+comma workspace prev
