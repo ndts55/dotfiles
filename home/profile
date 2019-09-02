@@ -3,7 +3,7 @@ export BROWSER=google-chrome-stable
 export TERMINAL="termite"
 
 export MSBuildSDKsPath=/opt/dotnet/sdk/2.2.105/Sdks/
-export PATH="$PATH:/home/ndts/.dotnet/tools:$MSBuildSDKsPath"
+export PATH="$PATH:/home/ndts/Android/Sdk/build-tools/28.0.3:/home/ndts/.dotnet/tools:$MSBuildSDKsPath"
 
 xrdb -merge ~/.Xresources
 xrdb -merge ~/.theme
