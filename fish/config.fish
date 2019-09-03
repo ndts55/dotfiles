@@ -1,5 +1,5 @@
 set DEFAULT_USER ndts
-set -gx EDITOR nvim
+set -gx EDITOR vim
 set -gx BROWSER firefox
 
 source ~/.config/fish/abbr.fish
