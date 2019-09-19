@@ -189,6 +189,9 @@ bindsym XF86AudioPrev exec playerctl previous
 bindsym XF86MonBrightnessDown exec xbacklight -dec 10
 bindsym XF86MonBrightnessUp exec xbacklight -inc 10
 
+## sleep
+bindsym XF86Sleep exec cinnamon-screensaver-command -l, exec systemctl hibernate
+
 # workspace move
 bindsym $mod+Shift+comma move workspace prev
 bindsym $mod+Shift+period move workspace next
