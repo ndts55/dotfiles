@@ -43,7 +43,7 @@ set ignorecase            " ignore case for pattern matches
 set smartcase             " override 'ignorecase' if pattern contains uppercase
 set wrapscan              " allow searches to wrap around EOF
 
-set cursorline            " highlight the current screen line
+" set cursorline            " highlight the current screen line
 set nocursorcolumn        " ... or screen column ...
 set colorcolumn=80       " ... or margins ...
 highlight ColorColumn ctermbg=darkgray
@@ -141,25 +141,16 @@ Plug 'vim-airline/vim-airline-themes'
 " CtrlP
 Plug 'kien/ctrlp.vim'
 
-" base16 themes
-Plug 'chriskempson/base16-vim'
-
 call plug#end()
 
 " Airline
 let g:airline#extensions#tabline#enabled = 1
 let g:airline_powerline_fonts = 1
-let g:airline_theme = 'base16_grayscale'
+let g:airline_theme = 'bubblegum'
 if !exists('g:airline_symbols')
     let g:airline_symbols = {}
 endif
 let g:airline_symbols.space = "\ua0"
-
-" colorscheme
-set background=dark
-colorscheme base16-grayscale-light
-
-set termguicolors
 
 " CtrlP
 let g:ctrlp_map = '<C-P>'

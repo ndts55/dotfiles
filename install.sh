@@ -37,29 +37,14 @@ if [ ! -d $config_dir ]; then
     mkdir $config_dir
 fi
 
-# compton
-create_link $current_dir/compton/compton.conf ~/.config/compton.conf
-
 # dunst
 create_link $current_dir/dunst $config_dir/dunst
 
 # fish
 create_link $current_dir/fish $config_dir/fish
 
-# home
-create_link $current_dir/home/Xresources $HOME/.Xresources
-create_link $current_dir/home/profile $HOME/.profile
-create_link $current_dir/home/bashrc $HOME/.bashrc
-create_link $current_dir/home/theme $HOME/.theme
-
 # i3 wm
 create_link $current_dir/i3 $config_dir/i3
-
-# polybar
-create_link $current_dir/polybar ~/.config/polybar
-
-# ranger
-create_link $current_dir/ranger ~/.config/ranger
 
 # redshift
 create_link $current_dir/redshift/redshift.conf ~/.config/redshift.conf
@@ -67,19 +52,9 @@ create_link $current_dir/redshift/redshift.conf ~/.config/redshift.conf
 # rofi
 create_link $current_dir/rofi ~/.local/share/rofi
 
-# termite
-create_link $current_dir/termite ~/.config/termite
-
-# tmux
-create_link $current_dir/tmux/tmux.conf ~/.tmux.conf
-
 # vim
 create_link $current_dir/vim/vimrc ~/.vimrc
 
 # zathura
 create_link $current_dir/zathura ~/.config/zathura
 
-if [ ! -d "$config_dir/base16-shell" ]; then
-    echo "D |  downloading base16-shell repository"
-    git clone https://github.com/chriskempson/base16-shell.git ~/.config/base16-shell
-fi
