@@ -168,6 +168,9 @@ bindsym $mod+Shift+7 move container to workspace $ws7
 bindsym $mod+Shift+8 move container to workspace $ws8
 bindsym $mod+Shift+9 move container to workspace $ws9
 
+bindsym $mod+Shift+comma move container to workspace prev
+bindsym $mod+Shift+period move container to workspace next
+
 # Move to workspace with focused container
 bindsym $mod+Ctrl+1 move container to workspace $ws1; workspace $ws1
 bindsym $mod+Ctrl+2 move container to workspace $ws2; workspace $ws2
@@ -179,9 +182,12 @@ bindsym $mod+Ctrl+7 move container to workspace $ws7; workspace $ws7
 bindsym $mod+Ctrl+8 move container to workspace $ws8; workspace $ws8
 bindsym $mod+Ctrl+9 move container to workspace $ws9; workspace $ws9
 
+bindsym $mod+Ctrl+comma move container to workspace prev; workspace prev
+bindsym $mod+Ctrl+period move container to workspace next; workspace next
+
 # Open applications on specific workspaces
 assign [class="Telegram"] $ws7
-assign [class="Deluge"] $ws9
+assign [class="Transmission"] $ws9
 
 # Open specific applications in floating mode
 for_window [title="alsamixer"] floating enable border pixel 1
