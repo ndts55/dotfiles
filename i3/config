@@ -34,8 +34,8 @@ bindsym $mod+Return exec terminal
 bindsym $mod+Shift+q kill
 
 # start program launcher
-bindsym $mod+d exec rofi -show run -width 25 -theme default -font "URWGothic-Book 16"
-bindsym $mod+Shift+d exec rofi -show window -width 25 -theme default -font "URWGothic-Book 16"
+bindsym $mod+d exec rofi -show run -width 25 -theme default -font "DejaVu Sans Mono 16"
+bindsym $mod+Shift+d exec rofi -show window -width 25 -theme default -font "DejaVu Sans Mono 16"
 
 # launch categorized menu
 bindsym $mod+z exec --no-startup-id morc_menu
