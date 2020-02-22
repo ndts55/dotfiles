@@ -32,7 +32,7 @@ set splitbelow            " split new horizontal windows below
 set winminheight=0        " allow windows to shrink to status line
 set winminwidth=0         " allow windows to shrink to vertical separator
 
-set noexpandtab           " do not insert spaces for <Tab> press
+set expandtab             " do not insert spaces for <Tab> press
 set smarttab              " tab respects 'shiftwidth', 'tapstop', 'softtapstop'
 set tabstop=4             " set the visible width of tabs
 set softtabstop=4         " edit as if tabs are 2 characters wide

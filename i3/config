@@ -258,6 +258,17 @@ mode $mode_resize {
         bindsym Escape mode "default"
 }
 
+# display management mode
+set $mode_display_management "(l)aptop, (m)onitor"
+bindsym $mod+Ctrl+Shift+d mode $mode_display_management
+mode $mode_display_management {
+        bindsym l exec "~/.config/i3/laptop.sh", mode "default"
+        bindsym m exec "~/.config/i3/monitor.sh", mode "default"
+
+        bindsym Return mode "default"
+        bindsym Escape mode "default"
+}
+
 # Lock screen
 bindsym $mod+Ctrl+Shift+l exec --no-startup-id light-locker-command -l
 
