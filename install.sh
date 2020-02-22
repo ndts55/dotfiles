@@ -58,3 +58,6 @@ create_link $current_dir/vim/vimrc ~/.vimrc
 # zathura
 create_link $current_dir/zathura ~/.config/zathura
 
+# zsh
+create_link $current_dir/zsh/zshrc ~/.zshrc
+
