@@ -141,6 +141,8 @@ bindsym $mod+period workspace next
 bindsym $mod+comma workspace prev
 bindsym $mod+Tab workspace next
 bindsym $mod+Shift+Tab workspace prev
+bindsym --whole-window --border $mod+button5 workspace next
+bindsym --whole-window --border $mod+button4 workspace prev
 
 # Workspace names
 set $ws1 1:1
@@ -326,18 +328,16 @@ set_from_resource $term_color15    color15
 
 # Start i3bar to display a workspace bar (plus the system information i3status if available)
 bar {
-	i3bar_command i3bar
-	status_command i3status
-	position bottom
+    i3bar_command i3bar
+    status_command i3status
+    position bottom
 
 ## please set your primary output first. Example: 'xrandr --output eDP1 --primary'
-#	tray_output primary
-#	tray_output eDP1
+#   tray_output primary
+#   tray_output eDP1
 
-	bindsym button4 nop
-	bindsym button5 nop
-#   font xft:URWGothic-Book 11
-	strip_workspace_numbers yes
+    font xft:DejaVu Sans Mono 14
+    strip_workspace_numbers yes
 
     colors {
         background #222D31
