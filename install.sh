@@ -43,6 +43,9 @@ create_link $current_dir/dunst $config_dir/dunst
 # fish
 create_link $current_dir/fish $config_dir/fish
 
+# i3 status
+create_link $current_dir/i3status $config_dir/i3status
+
 # i3 wm
 create_link $current_dir/i3 $config_dir/i3
 
