@@ -76,7 +76,7 @@ volume master {
 read_file brightness {
         format = " 🔆 %content% "
         path = "/home/ndts/.config/brightness"
-        max_characters = 2
+        max_characters = 3
 }
 
 tztime local {

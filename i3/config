@@ -53,7 +53,7 @@ bindsym $mod+Ctrl+m exec pavucontrol
 ################################################################################################
 
 # Screen brightness controls
-set $write_brightness xbacklight > /home/ndts/.config/brightness
+set $write_brightness xbacklight | awk -F'.' '{print $1}' > /home/ndts/.config/brightness
 set $refresh_i3status killall -SIGUSR1 i3status
 bindsym XF86MonBrightnessUp exec xbacklight -inc 5 && $write_brightness && $refresh_i3status
 bindsym XF86MonBrightnessDown exec xbacklight -dec 5 && $write_brightness && $refresh_i3status
