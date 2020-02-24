@@ -62,9 +62,9 @@ bindsym XF86AudioNext exec "playerctl next; notify-send 'next'"
 bindsym XF86AudioPrev exec "playerctl previous; notify-send 'previous'"
 
 # volume control
-bindsym XF86AudioMute exec "amixer set Master toggle; notify-send -t 600 $(amixer sget Master | grep 'Right:' | awk -F '[][]' '{ print $4 }')"
-bindsym XF86AudioLowerVolume exec "amixer set Master 5%-; notify-send -t 300 $(amixer sget Master | grep 'Right:' | awk -F '[][]' '{ print $2 }')"
-bindsym XF86AudioRaiseVolume exec "amixer set Master 5%+; notify-send -t 300 $(amixer sget Master | grep 'Right:' | awk -F '[][]' '{ print $2 }')"
+bindsym XF86AudioMute exec "amixer set Master toggle"
+bindsym XF86AudioLowerVolume exec "amixer set Master 5%-"
+bindsym XF86AudioRaiseVolume exec "amixer set Master 5%+"
 
 # Start Applications
 bindsym $mod+F2 exec firefox

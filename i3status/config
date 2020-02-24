@@ -16,16 +16,22 @@ general {
 
 # order += "ipv6"
 order += "cpu_usage"
+order += "cpu_temperature 0"
 order += "disk /"
 # order += "disk /home"
 order += "wireless _first_"
 order += "battery all"
 # order += "load"
 order += "memory"
+order += "volume master"
 order += "tztime local"
 
 cpu_usage {
         format = " 🤖 %usage "
+}
+
+cpu_temperature 0 {
+        format = " 🔥 %degrees°C "
 }
 
 load {
@@ -55,6 +61,14 @@ memory {
         format = " 🌑 %used / %available 🌕 "
         threshold_degraded = "1G"
         format_degraded = "MEMORY < %available"
+}
+
+volume master {
+        format = " 🔊 %volume "
+        format_muted = " 🔇 %volume "
+        device = "default"
+        mixer = "Master"
+        mixer_idx = 0
 }
 
 tztime local {
