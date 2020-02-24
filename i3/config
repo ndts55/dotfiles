@@ -147,12 +147,12 @@ bindsym --whole-window --border $mod+button5 workspace next
 bindsym --whole-window --border $mod+button4 workspace prev
 
 # Workspace names
-set $ws1 1:1️
-set $ws2 2:2️
-set $ws3 3:3️
-set $ws4 4:4️
-set $ws5 5:5️
-set $ws6 6:6️
+set $ws1 1:❤️
+set $ws2 2:💚
+set $ws3 3:🧡
+set $ws4 4:💙
+set $ws5 5:💛
+set $ws6 6:💜
 set $ws7 7:💬
 set $ws8 8:🎵
 set $ws9 9:📥
@@ -338,7 +338,7 @@ bar {
 #   tray_output primary
 #   tray_output eDP1
 
-    font xft:DejaVu Sans Mono 14
+    font xft:Noto Sans Mono 14
     strip_workspace_numbers yes
 
     colors {
