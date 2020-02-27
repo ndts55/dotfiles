@@ -49,6 +49,9 @@ create_link $current_dir/i3status $config_dir/i3status
 # i3 wm
 create_link $current_dir/i3 $config_dir/i3
 
+# profile
+create_link $current_dir/home/profile ~/.profile
+
 # redshift
 create_link $current_dir/redshift/redshift.conf ~/.config/redshift.conf
 
@@ -57,6 +60,9 @@ create_link $current_dir/rofi ~/.local/share/rofi
 
 # vim
 create_link $current_dir/vim/vimrc ~/.vimrc
+
+# Xresources
+create_link $current_dir/home/Xresources ~/.Xresources
 
 # zathura
 create_link $current_dir/zathura ~/.config/zathura
