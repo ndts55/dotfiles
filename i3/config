@@ -200,7 +200,7 @@ bindsym $mod+Ctrl+period move container to workspace next; workspace next
 
 # Open applications on specific workspaces
 assign [class="Telegram"] $ws7
-assign [class="whatsapp-nativefier-d52542"] $ws7
+assign [class="whatsapp-nativefier*"] $ws7
 assign [class="Signal"] $ws7
 assign [class="Slack"] $ws7
 assign [class="Spotify"] $ws8
