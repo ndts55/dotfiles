@@ -276,6 +276,14 @@ mode $mode_display_management {
         bindsym Escape mode "default"
 }
 
+# mullvad control
+set $mode_mullvad "(c)onnect, (d)isconnect"
+bindsym $mod+Ctrl+Shift+m mode $mode_mullvad
+mode $mode_mullvad {
+        bindsym c exec mullvad connect, mode "default"
+        bindsym d exec mullvad disconnect, mode "default"
+}
+
 # Lock screen
 bindsym $mod+Ctrl+Shift+l exec --no-startup-id light-locker-command -l
 
