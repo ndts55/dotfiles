@@ -100,8 +100,9 @@ source $ZSH/oh-my-zsh.sh
 # Example aliases
 alias zshconfig="vim ~/.zshrc"
 alias zshreload="source ~/.zshrc"
-alias l="ls -l"
-alias la="ls -al"
+alias ls="lsd"
+alias la="lsd -a"
+alias ll="lsd -l"
 alias gs="git status"
 alias gaa="git add ."
 alias gcm="git commit -m"
@@ -112,5 +113,4 @@ alias t="todo.sh -t"
 alias sysstart="systemctl start"
 alias sysstop="systemctl stop"
 alias sysenable="systemctl enable"
-alias bnpup="docker-compose -f docker-compose.yml -f docker-compose.dev.yml up -d"
-alias bnpdown="docker-compose -f docker-compose.yml -f docker-compose.dev.yml down"
+
