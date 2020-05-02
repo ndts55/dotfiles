@@ -283,6 +283,9 @@ bindsym $mod+Ctrl+Shift+m mode $mode_mullvad
 mode $mode_mullvad {
         bindsym c exec mullvad connect, mode "default"
         bindsym d exec mullvad disconnect, mode "default"
+
+        bindsym Return mode "default"
+        bindsym Escape mode "default"
 }
 
 # Lock screen
