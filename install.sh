@@ -61,9 +61,6 @@ create_link $current_dir/vim/vimrc ~/.vimrc
 # Xresources
 create_link $current_dir/home/Xresources ~/.Xresources
 
-# zathura
-create_link $current_dir/zathura ~/.config/zathura
-
 # zsh
 create_link $current_dir/zsh/zshrc ~/.zshrc
 
