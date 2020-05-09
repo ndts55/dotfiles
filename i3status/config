@@ -37,11 +37,9 @@ cpu_temperature 0 {
 
 load {
         format = " load %1min "
-        # max_threshold = 0.3
 }
 
 disk "/" {
-        # format = " hdd %avail "
         format = " 💽 %avail "
 }
 
@@ -59,7 +57,6 @@ battery all {
 }
 
 memory {
-        #format = " 🌑 %used / %available 🌕 "
         format = " 🌈 %used "
         threshold_degraded = "1G"
         format_degraded = " 🌈 %used "
