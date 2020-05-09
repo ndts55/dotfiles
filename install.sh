@@ -32,10 +32,19 @@ function create_link {
 
 current_dir="$( cd "$( dirname "${BASH_SOURCE[0]}" )" && pwd )"
 config_dir="$HOME/.config"
+local_share_dir="$HOME/.local/share"
 
 if [ ! -d $config_dir ]; then
-    mkdir $config_dir
+    mkdir -p $config_dir
 fi
+
+if [ ! -d $local_share_dir ]; then
+    mkdir -p $local_share_dir
+fi
+
+# colorschemes
+mkdir -p $local_share_dir/xfce4/terminal/colorschemes
+create_link $current_dir/themes/maia.theme $local_share_dir/xfce4/terminal/colorschemes/maia.theme
 
 # dunst
 create_link $current_dir/dunst $config_dir/dunst
@@ -47,20 +56,20 @@ create_link $current_dir/i3status $config_dir/i3status
 create_link $current_dir/i3 $config_dir/i3
 
 # profile
-create_link $current_dir/home/profile ~/.profile
+create_link $current_dir/home/profile $HOME/.profile
 
 # redshift
-create_link $current_dir/redshift/redshift.conf ~/.config/redshift.conf
+create_link $current_dir/redshift/redshift.conf $config_dir/redshift.conf
 
 # rofi
-create_link $current_dir/rofi ~/.local/share/rofi
+create_link $current_dir/rofi $local_share_dir/rofi
 
 # vim
-create_link $current_dir/vim/vimrc ~/.vimrc
+create_link $current_dir/vim/vimrc $HOME/.vimrc
 
 # Xresources
-create_link $current_dir/home/Xresources ~/.Xresources
+create_link $current_dir/home/Xresources $HOME/.Xresources
 
 # zsh
-create_link $current_dir/zsh/zshrc ~/.zshrc
+create_link $current_dir/zsh/zshrc $HOME/.zshrc
 
