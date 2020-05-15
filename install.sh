@@ -64,6 +64,9 @@ create_link $current_dir/redshift/redshift.conf $config_dir/redshift.conf
 # rofi
 create_link $current_dir/rofi $local_share_dir/rofi
 
+# todo
+create_link $current_dir/todo $HOME/.todo
+
 # vim
 create_link $current_dir/vim/vimrc $HOME/.vimrc
 
