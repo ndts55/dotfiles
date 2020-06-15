@@ -49,6 +49,9 @@ create_link $current_dir/themes/maia.theme $local_share_dir/xfce4/terminal/color
 # dunst
 create_link $current_dir/dunst $config_dir/dunst
 
+# emacs
+create_link $current_dir/emacs $HOME/.emacs.d
+
 # i3 status
 create_link $current_dir/i3status $config_dir/i3status
 
