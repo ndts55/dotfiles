@@ -70,11 +70,11 @@ bindsym XF86AudioRaiseVolume exec amixer set Master 5%+
 
 # Start Applications
 bindsym $mod+F2 exec chromium
-bindsym $mod+F3 exec pcmanfm
-bindsym $mod+Shift+F3 exec pcmanfm_pkexec
-bindsym $mod+t exec --no-startup-id pkill compton
-bindsym $mod+Ctrl+t exec --no-startup-id compton -b
-bindsym $mod+Print exec maim -s | xclip -selection clipboard -t image/png
+bindsym $mod+Shift+F2 exec chromium -incognito
+bindsym $mod+F3 exec pcmanfm bindsym $mod+Shift+F3 exec pcmanfm_pkexec
+bindsym $mod+t exec --no-startup-id pkill compton bindsym $mod+Ctrl+t exec
+--no-startup-id compton -b bindsym $mod+Print exec maim -s | xclip
+-selection clipboard -t image/png
 
 focus_follows_mouse no
 
