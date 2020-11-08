@@ -5,4 +5,5 @@ export GTK2_RC_FILES="$HOME/.gtkrc-2.0"
 export BROWSER=/usr/bin/firefox
 export TERMINAL=/usr/bin/xfce4-terminal
 
-export PATH="$HOME/.cargo/bin:$HOME/.local/bin:$PATH"
+export ANDROID_SDK_HOME=/mnt/Data/8_tools/AndroidSdk
+export PATH=$HOME/.cargo/bin:$HOME/.local/bin:/usr/local/texlive/2020/bin/x86_64-linux:$PATH
