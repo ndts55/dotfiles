@@ -108,4 +108,5 @@ alias t="todo.sh -t"
 alias sysstart="systemctl start"
 alias sysstop="systemctl stop"
 alias sysenable="systemctl enable"
+alias week="t due 7"
 
