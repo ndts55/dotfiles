@@ -201,13 +201,9 @@ bindsym $mod+Ctrl+period move container to workspace next; workspace next
 
 # Open applications on specific workspaces
 assign [class="Telegram"] $ws7
-assign [class="whatsapp-web"] $ws7
-assign [class="Signal"] $ws7
-assign [class="Slack"] $ws7
 assign [class="discord"] $ws7
 assign [class="Spotify"] $ws8
 assign [class="Transmission"] $ws9
-assign [class="Deluge"] $ws9
 
 # Open specific applications in floating mode
 for_window [title="alsamixer"] floating enable
