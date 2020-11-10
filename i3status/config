@@ -73,5 +73,5 @@ read_file brightness {
 }
 
 tztime local {
-        format = " 📅 %Y-%m-%d ⌚ %H:%M "
+        format = " 📅 %a %Y-%m-%d ⌚ %H:%M "
 }
