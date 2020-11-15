@@ -303,6 +303,7 @@ exec --no-startup-id redshift-gtk
 exec --no-startup-id nextcloud --background
 exec --no-startup-id mullvad-vpn
 exec --no-startup-id keepassxc
+exec --no-startup-id ~/.config/i3/brightness.sh =
 exec_always --no-startup-id ff-theme-util
 exec_always --no-startup-id fix_xcursor
 exec_always --no-startup-id setxkbmap -layout us -variant altgr-intl -option nodeadkeys -option "lv3:caps_switch"
