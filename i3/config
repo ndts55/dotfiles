@@ -53,10 +53,8 @@ bindsym $mod+Ctrl+m exec pavucontrol
 ################################################################################################
 
 # Screen brightness controls
-set $write_brightness xbacklight | awk -F'.' '{print $1}' > /home/ndts/.config/brightness
-set $refresh_i3status killall -SIGUSR1 i3status
-bindsym XF86MonBrightnessUp exec xbacklight -inc 10 && $write_brightness && $refresh_i3status
-bindsym XF86MonBrightnessDown exec xbacklight -dec 10 && $write_brightness && $refresh_i3status
+bindsym XF86MonBrightnessUp exec "~/.config/i3/brightness.sh +"
+bindsym XF86MonBrightnessDown exec "~/.config/i3/brightness.sh -"
 
 # audio control
 bindsym XF86AudioPlay exec playerctl play-pause
