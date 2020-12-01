@@ -268,8 +268,8 @@ mode $mode_resize {
 set $mode_display_management "(l)aptop, (m)onitor"
 bindsym $mod+Ctrl+Shift+d mode $mode_display_management
 mode $mode_display_management {
-        bindsym l exec "~/.config/i3/laptop.sh", mode "default"
-        bindsym m exec "~/.config/i3/monitor.sh", mode "default"
+        bindsym l exec "~/.config/i3/laptop.sh", reload, mode "default"
+        bindsym m exec "~/.config/i3/monitor.sh", reload, mode "default"
 
         bindsym Return mode "default"
         bindsym Escape mode "default"
