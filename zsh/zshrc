@@ -111,4 +111,5 @@ alias sysenable="systemctl enable"
 alias sysstatus="systemctl status"
 alias week="t due 7"
 alias month="t due 30"
+alias semester="t due 130"
 
