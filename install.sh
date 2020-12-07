@@ -55,6 +55,9 @@ create_link $current_dir/i3status $config_dir/i3status
 # i3 wm
 create_link $current_dir/i3 $config_dir/i3
 
+# nitrogen
+create_link $current_dir/nitrogen/bg-saved.cfg $config_dir/nitrogen/bg-saved.cfg
+
 # profile
 create_link $current_dir/home/profile $HOME/.profile
 

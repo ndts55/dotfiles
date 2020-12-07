@@ -265,11 +265,12 @@ mode $mode_resize {
 }
 
 # display management mode
-set $mode_display_management "(l)aptop, (m)onitor"
+set $mode_display_management "(l)aptop, (m)onitor (b)oth"
 bindsym $mod+Ctrl+Shift+d mode $mode_display_management
 mode $mode_display_management {
         bindsym l exec "~/.config/i3/laptop.sh", restart, mode "default"
         bindsym m exec "~/.config/i3/monitor.sh", restart, mode "default"
+        bindsym b exec "~/.config/i3/both.sh", restart, mode "default"
 
         bindsym Return mode "default"
         bindsym Escape mode "default"
@@ -308,7 +309,7 @@ exec --no-startup-id ~/.config/i3/brightness.sh =
 exec_always --no-startup-id ff-theme-util
 exec_always --no-startup-id fix_xcursor
 exec_always --no-startup-id setxkbmap -layout us -variant altgr-intl -option nodeadkeys -option "lv3:caps_switch"
-exec_always --no-startup-id nitrogen --set-zoom-fill ~/.config/i3/wallpaper
+exec_always --no-startup-id nitrogen --restore
 
 # Color palette used for the terminal ( ~/.Xresources file )
 # Colors are gathered based on the documentation:
