@@ -304,6 +304,7 @@ exec --no-startup-id light-locker
 exec redshift-gtk
 exec nextcloud --background
 exec mullvad-vpn
+exec mullvad connect
 exec keepassxc
 exec ~/.config/i3/brightness.sh =
 exec_always --no-startup-id ff-theme-util
