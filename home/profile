@@ -6,4 +6,4 @@ export BROWSER=/usr/bin/chromium
 export TERMINAL=/usr/bin/xfce4-terminal
 
 export ANDROID_SDK_HOME=/mnt/Data/8_tools/AndroidSdk
-export PATH=$HOME/.cargo/bin:$HOME/.cargo/env:$HOME/.local/bin:/usr/local/texlive/2021/bin/x86_64-linux:$PATH
+export PATH=$HOME/.ghcup/bin:$HOME/.cargo/bin:$HOME/.cargo/env:$HOME/.local/bin:/usr/local/texlive/2021/bin/x86_64-linux:$PATH
